@@ -188,6 +188,16 @@ main>section:nth-of-type(3) h2{color:var(--on-wine)}
 .qform input:focus,.qform textarea:focus{outline:2px solid var(--brick);outline-offset:1px;border-color:var(--brick)}
 .qform button{justify-self:start}
 .qform-note{font-size:.78rem;color:var(--muted);margin:0}
+.qform-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qform-hint{font-size:.8rem;color:var(--muted);margin:-6px 0 0}
+.qform-hint.warn{color:var(--brick);font-weight:600}
+.qform .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.qform-status{margin:0;padding:12px 14px;border-radius:6px;font-size:.92rem}
+.qform-status.ok{background:var(--ok-bg);color:var(--ok-ink);border:1px solid var(--ok-line)}
+.qform-status.err{background:var(--brick-soft);color:var(--brick-deep);border:1px solid #E3C2BE}
+.qform button[disabled]{opacity:.6;cursor:wait}
+@media (max-width:600px){.qform-pair{grid-template-columns:1fr}}
+
 
 footer{padding-block:34px;background:var(--wine);color:var(--on-wine-muted);border-top:4px solid var(--brick)}
 .footer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
@@ -392,12 +402,18 @@ html{scroll-behavior:smooth}
           <div class="eyebrow">Kapcsolat</div>
           <h2>Beszéljük meg a projektjét</h2>
           <p style="color:var(--muted);margin-top:10px">Írjon pár mondatot a tervezett projektről és a várható határidőről — az első beszélgetés díjmentes.</p>
-          <form class="qform" data-mailto="office@transylvanianinstitute.ro" data-subject="Megkeresés a weboldalról">
-            <label>Név <small>(nem kötelező)</small><input type="text" name="name" autocomplete="name"></label>
-            <label>Telefonszám <small>(ha szeretné, hogy visszahívjuk)</small><input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
-            <label>Kérdés / üzenet<textarea name="message" rows="4" required></textarea></label>
+          <form class="qform" action="contact.php" method="post" data-lang-code="hu" data-subject="Megkeresés a weboldalról" data-ok="Köszönjük, megkaptuk az üzenetét. Hamarosan jelentkezünk." data-err="Az üzenetet most nem sikerült elküldeni. Kérjük, írjon közvetlenül az office@transylvanianinstitute.ro címre." data-either="Az e-mail-cím vagy a telefonszám közül legalább az egyiket adja meg, hogy válaszolni tudjunk." data-sending="Küldés…" novalidate>
+            <label>Név <small>(nem kötelező)</small><input type="text" name="name" autocomplete="name" maxlength="120"></label>
+            <div class="qform-pair">
+              <label>E-mail-cím<input type="email" name="email" autocomplete="email" maxlength="160"></label>
+              <label>Telefonszám<input type="tel" name="phone" autocomplete="tel" inputmode="tel" maxlength="40"></label>
+            </div>
+            <p class="qform-hint">Az e-mail-cím vagy a telefonszám közül legalább az egyiket adja meg, hogy válaszolni tudjunk.</p>
+            <label>Kérdés / üzenet<textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+            <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
             <button class="btn btn-main" type="submit">Küldés</button>
-            <p class="qform-note">A gomb megnyitja az Ön levelezőprogramját az üzenettel.</p>
+            <p class="qform-status" role="status" aria-live="polite" hidden></p>
+            <p class="qform-note">Az adatokat csak a megkeresés megválaszolására használjuk.</p>
           </form>
         </div>
         <dl class="contact-info">
@@ -591,12 +607,18 @@ html{scroll-behavior:smooth}
           <div class="eyebrow">Contact</div>
           <h2>Să discutăm despre proiectul dumneavoastră</h2>
           <p style="color:var(--muted);margin-top:10px">Scrieți câteva rânduri despre proiect și despre termenul avut în vedere — prima discuție este gratuită.</p>
-          <form class="qform" data-mailto="office@transylvanianinstitute.ro" data-subject="Solicitare de pe site">
-            <label>Nume <small>(opțional)</small><input type="text" name="name" autocomplete="name"></label>
-            <label>Telefon <small>(dacă doriți să vă sunăm înapoi)</small><input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
-            <label>Întrebare / mesaj<textarea name="message" rows="4" required></textarea></label>
+          <form class="qform" action="contact.php" method="post" data-lang-code="ro" data-subject="Solicitare de pe site" data-ok="Vă mulțumim, am primit mesajul. Revenim în curând." data-err="Mesajul nu a putut fi trimis acum. Vă rugăm să ne scrieți direct la office@transylvanianinstitute.ro." data-either="Completați cel puțin adresa de e-mail sau numărul de telefon, ca să vă putem răspunde." data-sending="Se trimite…" novalidate>
+            <label>Nume <small>(opțional)</small><input type="text" name="name" autocomplete="name" maxlength="120"></label>
+            <div class="qform-pair">
+              <label>Adresă de e-mail<input type="email" name="email" autocomplete="email" maxlength="160"></label>
+              <label>Telefon<input type="tel" name="phone" autocomplete="tel" inputmode="tel" maxlength="40"></label>
+            </div>
+            <p class="qform-hint">Completați cel puțin adresa de e-mail sau numărul de telefon, ca să vă putem răspunde.</p>
+            <label>Întrebare / mesaj<textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+            <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
             <button class="btn btn-main" type="submit">Trimite</button>
-            <p class="qform-note">Butonul deschide programul dumneavoastră de e-mail, cu mesajul precompletat.</p>
+            <p class="qform-status" role="status" aria-live="polite" hidden></p>
+            <p class="qform-note">Datele sunt folosite doar pentru a răspunde solicitării dumneavoastră.</p>
           </form>
         </div>
         <dl class="contact-info">
@@ -784,12 +806,18 @@ html{scroll-behavior:smooth}
           <div class="eyebrow">Contact</div>
           <h2>Let's talk about your project</h2>
           <p style="color:var(--muted);margin-top:10px">Write a few lines about the project and your deadline — the first conversation is free.</p>
-          <form class="qform" data-mailto="office@transylvanianinstitute.ro" data-subject="Enquiry from the website">
-            <label>Name <small>(optional)</small><input type="text" name="name" autocomplete="name"></label>
-            <label>Phone <small>(if you would like us to call you back)</small><input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
-            <label>Question / message<textarea name="message" rows="4" required></textarea></label>
+          <form class="qform" action="contact.php" method="post" data-lang-code="en" data-subject="Enquiry from the website" data-ok="Thank you, we have received your message and will be in touch soon." data-err="Your message could not be sent right now. Please write to us directly at office@transylvanianinstitute.ro." data-either="Please give at least your email address or phone number so we can reply." data-sending="Sending…" novalidate>
+            <label>Name <small>(optional)</small><input type="text" name="name" autocomplete="name" maxlength="120"></label>
+            <div class="qform-pair">
+              <label>Email address<input type="email" name="email" autocomplete="email" maxlength="160"></label>
+              <label>Phone<input type="tel" name="phone" autocomplete="tel" inputmode="tel" maxlength="40"></label>
+            </div>
+            <p class="qform-hint">Please give at least your email address or phone number so we can reply.</p>
+            <label>Question / message<textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+            <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
             <button class="btn btn-main" type="submit">Send</button>
-            <p class="qform-note">This opens your own email app with the message filled in.</p>
+            <p class="qform-status" role="status" aria-live="polite" hidden></p>
+            <p class="qform-note">We use your details only to reply to your enquiry.</p>
           </form>
         </div>
         <dl class="contact-info">
@@ -850,19 +878,32 @@ html{scroll-behavior:smooth}
     var form = ev.target.closest(".qform");
     if (!form) return;
     ev.preventDefault();
-    var to = form.getAttribute("data-mailto");
-    var subjectBase = form.getAttribute("data-subject") || "";
-    var nameField = form.querySelector('[name="name"]');
-    var phoneField = form.querySelector('[name="phone"]');
-    var phoneVal = phoneField ? phoneField.value.trim() : "";
-    var msgField = form.querySelector('[name="message"]');
-    var nameVal = nameField ? nameField.value.trim() : "";
-    var msgVal = msgField ? msgField.value.trim() : "";
-    var subject = subjectBase + (nameVal ? " – " + nameVal : "");
-    var sig = (nameVal ? "\n\n— " + nameVal : "") + (phoneVal ? (nameVal ? "\n" : "\n\n") + "Tel: " + phoneVal : "");
-    var body = msgVal + sig;
-    var url = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    window.location.href = url;
+    var val = function(n){ var el = form.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ""; };
+    var hint = form.querySelector(".qform-hint");
+    var status = form.querySelector(".qform-status");
+    var btn = form.querySelector('button[type="submit"]');
+    var msgEl = form.querySelector('[name="message"]');
+    if (!val("message")) { msgEl.focus(); msgEl.reportValidity && msgEl.reportValidity(); return; }
+    if (!val("email") && !val("phone")) {
+      if (hint) hint.classList.add("warn");
+      form.querySelector('[name="email"]').focus();
+      return;
+    }
+    if (hint) hint.classList.remove("warn");
+    var show = function(kind, text){ status.hidden = false; status.className = "qform-status " + kind; status.textContent = text; };
+    var label = btn.textContent;
+    btn.disabled = true; btn.textContent = form.getAttribute("data-sending") || label;
+    var data = new FormData(form);
+    data.append("lang", form.getAttribute("data-lang-code") || "");
+    data.append("subject", form.getAttribute("data-subject") || "");
+    fetch(form.getAttribute("action"), { method: "POST", body: data, headers: { "Accept": "application/json" } })
+      .then(function(r){ return r.json().catch(function(){ return { ok: false }; }); })
+      .then(function(j){
+        if (j && j.ok) { form.reset(); show("ok", form.getAttribute("data-ok")); }
+        else { show("err", form.getAttribute("data-err")); }
+      })
+      .catch(function(){ show("err", form.getAttribute("data-err")); })
+      .then(function(){ btn.disabled = false; btn.textContent = label; });
   });
   var saved = null;
   try { saved = localStorage.getItem("tic-lang"); } catch (e) {}
