@@ -74,8 +74,11 @@
       .catch(function(){ show("err", form.getAttribute("data-err")); })
       .then(function(){ btn.disabled = false; btn.textContent = label; });
   });
-  var fromUrl = null, saved = null;
-  try { fromUrl = new URLSearchParams(location.search).get("lang"); } catch (e) {}
-  try { saved = localStorage.getItem("tic-lang"); } catch (e) {}
-  setLang(fromUrl || saved || DEFAULT_LANG);
+  /* Egynyelvű oldalon (pl. blogcikk) nincs nyelvváltó blokk: ott a lap saját nyelve marad. */
+  if (document.querySelector("[data-lang]")) {
+    var fromUrl = null, saved = null;
+    try { fromUrl = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+    try { saved = localStorage.getItem("tic-lang"); } catch (e) {}
+    setLang(fromUrl || saved || DEFAULT_LANG);
+  }
 })();

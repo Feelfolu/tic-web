@@ -1,7 +1,7 @@
 /* TIC – pályázati kiírások megjelenítése (főoldali top 3 és a naptároldal).
-   Az adatok a data/kiirasok.json fájlban vannak. A lejárt kiírások maguktól
-   tűnnek el: a nyitottak a határidő után 24 órával, a várhatók az "until"
-   dátum után egy nappal. */
+   Az adatok a data/kiirasok.json fájlban vannak. Csak a nyitott (status: "open")
+   kiírások jelennek meg; a "expected" bejegyzések belső figyelőlista, az oldalon
+   nem látszanak. Egy nyitott kiírás a határidő után 24 órával magától eltűnik. */
 (function () {
   "use strict";
 
@@ -104,14 +104,11 @@
 
   function visibleCalls(data, lang, now) {
     return data.calls.filter(function (c) {
-      return (c.langs || []).indexOf(lang) !== -1 && pick(c.title, lang);
+      return c.status === "open" && (c.langs || []).indexOf(lang) !== -1 && pick(c.title, lang);
     }).map(function (c) {
       var st = state(c, now);
       return st ? { call: c, st: st } : null;
-    }).filter(Boolean).sort(function (a, b) {
-      var ka = a.st.kind === "expected" ? 1 : 0, kb = b.st.kind === "expected" ? 1 : 0;
-      return ka - kb || a.st.sort - b.st.sort;
-    });
+    }).filter(Boolean).sort(function (a, b) { return a.st.sort - b.st.sort; });
   }
 
   function fmtDeadline(call, st, t) {
@@ -178,11 +175,6 @@
       root.innerHTML =
         '<div class="cal-controls">' +
           '<label class="cal-search"><span class="sr-only">' + esc(t.searchLabel) + '</span><input type="search" id="' + uid + '-q" placeholder="' + esc(t.search) + '" autocomplete="off"></label>' +
-          '<div class="cal-status" role="group" aria-label="' + esc(t.statusLabel) + '">' +
-            '<button type="button" data-status="all" aria-pressed="true">' + esc(t.all) + "</button>" +
-            '<button type="button" data-status="open" aria-pressed="false">' + esc(t.onlyOpen) + "</button>" +
-            '<button type="button" data-status="expected" aria-pressed="false">' + esc(t.onlyExpected) + "</button>" +
-          "</div>" +
           '<div class="cal-tags" role="group" aria-label="' + esc(t.tagsLabel) + '">' +
             tagKeys.map(function (k) { return '<button type="button" class="chip" data-tag="' + esc(k) + '" aria-pressed="false">' + esc(data.tags[k][lang]) + "</button>"; }).join("") +
           "</div>" +
@@ -196,7 +188,7 @@
       var list = root.querySelector(".cal-list");
       var countEl = root.querySelector(".cal-count");
       var clearBtn = root.querySelector(".cal-clear");
-      var status = "all", tags = {};
+      var tags = {};
 
       function norm(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
       function hay(x) {
@@ -208,35 +200,26 @@
         var words = norm(q.value).split(/\s+/).filter(Boolean);
         var active = Object.keys(tags).filter(function (k) { return tags[k]; });
         var shown = items.filter(function (x) {
-          if (status === "open" && x.st.kind === "expected") return false;
-          if (status === "expected" && x.st.kind !== "expected") return false;
           if (active.length && !active.some(function (k) { return (x.call.tags || []).indexOf(k) !== -1; })) return false;
           var h = hay(x);
           return words.every(function (w) { return h.indexOf(w) !== -1; });
         });
-        var open = shown.filter(function (x) { return x.st.kind !== "expected"; });
-        var exp = shown.filter(function (x) { return x.st.kind === "expected"; });
-        var html = "";
-        if (open.length) html += '<h2 class="cal-group">' + esc(t.groupOpen) + '</h2><div class="calls">' + open.map(function (x) { return card(x, lang, data); }).join("") + "</div>";
-        if (exp.length) html += '<h2 class="cal-group">' + esc(t.groupExpected) + '</h2><div class="calls">' + exp.map(function (x) { return card(x, lang, data); }).join("") + "</div>";
-        list.innerHTML = html || '<p class="calls-empty">' + esc(t.none) + "</p>";
+        list.innerHTML = shown.length
+          ? '<div class="calls">' + shown.map(function (x) { return card(x, lang, data); }).join("") + "</div>"
+          : '<p class="calls-empty">' + esc(t.none) + "</p>";
         countEl.textContent = t.count(shown.length);
-        clearBtn.hidden = !(words.length || active.length || status !== "all");
+        clearBtn.hidden = !(words.length || active.length);
       }
       q.addEventListener("input", draw);
       root.addEventListener("click", function (ev) {
         var b = ev.target.closest("button");
         if (!b || !root.contains(b)) return;
-        if (b.hasAttribute("data-status")) {
-          status = b.getAttribute("data-status");
-          root.querySelectorAll("[data-status]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-        } else if (b.hasAttribute("data-tag")) {
+        if (b.hasAttribute("data-tag")) {
           var k = b.getAttribute("data-tag");
           tags[k] = !tags[k];
           b.setAttribute("aria-pressed", tags[k] ? "true" : "false");
         } else if (b.classList.contains("cal-clear")) {
-          q.value = ""; status = "all"; tags = {};
-          root.querySelectorAll("[data-status]").forEach(function (x) { x.setAttribute("aria-pressed", x.getAttribute("data-status") === "all" ? "true" : "false"); });
+          q.value = ""; tags = {};
           root.querySelectorAll("[data-tag]").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
         } else { return; }
         draw();

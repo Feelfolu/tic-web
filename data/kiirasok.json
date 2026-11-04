@@ -1,37 +1,127 @@
 {
   "updated": "2026-11-04",
-  "note": "TIC pályázati naptár adatfájl. status: open = most nyitott (deadlines kötelező), expected = várható (until kötelező). Egy nyitott kiírás a határidő után 24 órával, egy várható az until dátum után egy nappal automatikusan eltűnik az oldalról. langs: melyik nyelvi változatban jelenjen meg.",
+  "note": "TIC pályázati naptár adatfájl. Az oldalon csak a status: open bejegyzések látszanak (deadlines kötelező); egy nyitott kiírás a határidő után 24 órával magától eltűnik. A status: expected bejegyzések belső figyelőlista: az oldalon nem jelennek meg, amikor a kiírás megnyílik, open-ra kell állítani és határidőt adni neki. langs: melyik nyelvi változatban jelenjen meg.",
   "tags": {
-    "ro":          {"hu": "Romániai forrás",       "ro": "Finanțator din România",   "en": "Romanian funder"},
-    "hu":          {"hu": "Magyarországi forrás",  "ro": "Finanțator din Ungaria",   "en": "Hungarian funder"},
-    "eu":          {"hu": "Európai Unió",          "ro": "Uniunea Europeană",        "en": "European Union"},
-    "private":     {"hu": "Magánforrás",           "ro": "Finanțator privat",        "en": "Private funder"},
-    "local":       {"hu": "Megyei, városi",        "ro": "Județean, local",          "en": "County and city"},
-    "intl":        {"hu": "Nemzetközi partnerség", "ro": "Parteneriat internațional","en": "International partnership"},
-    "community":   {"hu": "Közösségfejlesztés",    "ro": "Dezvoltare comunitară",    "en": "Community development"},
-    "heritage":    {"hu": "Kulturális örökség",    "ro": "Patrimoniu cultural",      "en": "Cultural heritage"},
-    "folk":        {"hu": "Népi kultúra",          "ro": "Cultură tradițională",     "en": "Traditional culture"},
-    "performing":  {"hu": "Előadó-művészet",       "ro": "Arte ale spectacolului",   "en": "Performing arts"},
-    "festival":    {"hu": "Fesztivál",             "ro": "Festival",                 "en": "Festival"},
-    "publishing":  {"hu": "Könyvkiadás",           "ro": "Editare de carte",         "en": "Publishing"},
-    "memory":      {"hu": "Emlékezet, történelem", "ro": "Memorie, istorie",         "en": "Remembrance, history"},
-    "youth":       {"hu": "Ifjúság",               "ro": "Tineret",                  "en": "Youth"},
-    "education":   {"hu": "Oktatás, képzés",       "ro": "Educație",                 "en": "Education"},
-    "mobility":    {"hu": "Mobilitás",             "ro": "Mobilitate",               "en": "Mobility"},
-    "individuals": {"hu": "Magánszemélyeknek is",  "ro": "Și pentru persoane fizice","en": "Open to individuals"},
-    "cofinancing": {"hu": "Önrész-támogatás",      "ro": "Cofinanțare",              "en": "Co-financing"}
+    "ro": {
+      "hu": "Romániai forrás",
+      "ro": "Finanțator din România",
+      "en": "Romanian funder"
+    },
+    "hu": {
+      "hu": "Magyarországi forrás",
+      "ro": "Finanțator din Ungaria",
+      "en": "Hungarian funder"
+    },
+    "eu": {
+      "hu": "Európai Unió",
+      "ro": "Uniunea Europeană",
+      "en": "European Union"
+    },
+    "private": {
+      "hu": "Magánforrás",
+      "ro": "Finanțator privat",
+      "en": "Private funder"
+    },
+    "local": {
+      "hu": "Megyei, városi",
+      "ro": "Județean, local",
+      "en": "County and city"
+    },
+    "intl": {
+      "hu": "Nemzetközi partnerség",
+      "ro": "Parteneriat internațional",
+      "en": "International partnership"
+    },
+    "community": {
+      "hu": "Közösségfejlesztés",
+      "ro": "Dezvoltare comunitară",
+      "en": "Community development"
+    },
+    "heritage": {
+      "hu": "Kulturális örökség",
+      "ro": "Patrimoniu cultural",
+      "en": "Cultural heritage"
+    },
+    "folk": {
+      "hu": "Népi kultúra",
+      "ro": "Cultură tradițională",
+      "en": "Traditional culture"
+    },
+    "performing": {
+      "hu": "Előadó-művészet",
+      "ro": "Arte ale spectacolului",
+      "en": "Performing arts"
+    },
+    "festival": {
+      "hu": "Fesztivál",
+      "ro": "Festival",
+      "en": "Festival"
+    },
+    "publishing": {
+      "hu": "Könyvkiadás",
+      "ro": "Editare de carte",
+      "en": "Publishing"
+    },
+    "memory": {
+      "hu": "Emlékezet, történelem",
+      "ro": "Memorie, istorie",
+      "en": "Remembrance, history"
+    },
+    "youth": {
+      "hu": "Ifjúság",
+      "ro": "Tineret",
+      "en": "Youth"
+    },
+    "education": {
+      "hu": "Oktatás, képzés",
+      "ro": "Educație",
+      "en": "Education"
+    },
+    "mobility": {
+      "hu": "Mobilitás",
+      "ro": "Mobilitate",
+      "en": "Mobility"
+    },
+    "individuals": {
+      "hu": "Magánszemélyeknek is",
+      "ro": "Și pentru persoane fizice",
+      "en": "Open to individuals"
+    },
+    "cofinancing": {
+      "hu": "Önrész-támogatás",
+      "ro": "Cofinanțare",
+      "en": "Co-financing"
+    }
   },
   "calls": [
     {
       "id": "raiffeisen-comunitati-16",
       "status": "open",
-      "deadlines": ["2026-11-26T23:59:00+02:00"],
+      "deadlines": [
+        "2026-11-26T23:59:00+02:00"
+      ],
       "dateOnly": true,
-      "langs": ["ro", "hu", "en"],
-      "tags": ["ro", "private", "community"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "ro",
+        "private",
+        "community"
+      ],
       "url": "https://raiffeisencomunitati.org",
-      "title":  {"hu": "Raiffeisen Comunități – 16. kiadás", "ro": "Raiffeisen Comunități – ediția a 16-a", "en": "Raiffeisen Comunități – 16th edition"},
-      "funder": {"hu": "Raiffeisen Bank România", "ro": "Raiffeisen Bank România", "en": "Raiffeisen Bank Romania"},
+      "title": {
+        "hu": "Raiffeisen Comunități – 16. kiadás",
+        "ro": "Raiffeisen Comunități – ediția a 16-a",
+        "en": "Raiffeisen Comunități – 16th edition"
+      },
+      "funder": {
+        "hu": "Raiffeisen Bank România",
+        "ro": "Raiffeisen Bank România",
+        "en": "Raiffeisen Bank Romania"
+      },
       "who": {
         "hu": "Három nonprofit szervezetből vagy kezdeményező csoportból álló partnerség, romániai civil szervezet vezetésével. Partnerségenként legfeljebb 350 000 lej.",
         "ro": "Parteneriate de trei entități nonprofit (ONG-uri sau grupuri de inițiativă), coordonate de un ONG din România. Până la 350.000 lei pe parteneriat.",
@@ -41,13 +131,36 @@
     {
       "id": "culture-moves-europe-mobility",
       "status": "open",
-      "deadlines": ["2026-11-30T23:59:00+02:00", "2027-01-31T23:59:00+02:00", "2027-02-28T23:59:00+02:00", "2027-03-31T23:59:00+03:00", "2027-04-30T23:59:00+03:00"],
+      "deadlines": [
+        "2026-11-30T23:59:00+02:00",
+        "2027-01-31T23:59:00+02:00",
+        "2027-02-28T23:59:00+02:00",
+        "2027-03-31T23:59:00+03:00",
+        "2027-04-30T23:59:00+03:00"
+      ],
       "dateOnly": true,
-      "langs": ["ro", "hu", "en"],
-      "tags": ["eu", "mobility", "individuals", "intl"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "mobility",
+        "individuals",
+        "intl"
+      ],
       "url": "https://culture.ec.europa.eu/culture-moves-europe/call-for-individual-mobility",
-      "title":  {"hu": "Culture Moves Europe – egyéni mobilitás", "ro": "Culture Moves Europe – mobilitate individuală", "en": "Culture Moves Europe – individual mobility"},
-      "funder": {"hu": "Európai Unió, Kreatív Európa", "ro": "Uniunea Europeană, Europa Creativă", "en": "European Union, Creative Europe"},
+      "title": {
+        "hu": "Culture Moves Europe – egyéni mobilitás",
+        "ro": "Culture Moves Europe – mobilitate individuală",
+        "en": "Culture Moves Europe – individual mobility"
+      },
+      "funder": {
+        "hu": "Európai Unió, Kreatív Európa",
+        "ro": "Uniunea Europeană, Europa Creativă",
+        "en": "European Union, Creative Europe"
+      },
       "who": {
         "hu": "18 év feletti művészek és kulturális szakemberek, egyénileg vagy legfeljebb ötfős csoportban, külföldi szakmai utakra. Havi határidők 2027. április 30-ig.",
         "ro": "Artiști și profesioniști din cultură peste 18 ani, individual sau în grupuri de până la cinci persoane, pentru deplasări profesionale în străinătate. Termene lunare până la 30 aprilie 2027.",
@@ -57,13 +170,26 @@
     {
       "id": "nka-kpf-kreativ-europa-onresz",
       "status": "open",
-      "deadlines": ["2026-12-07T23:59:00+02:00"],
+      "deadlines": [
+        "2026-12-07T23:59:00+02:00"
+      ],
       "dateOnly": true,
-      "langs": ["hu"],
-      "tags": ["hu", "cofinancing", "eu", "intl"],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "cofinancing",
+        "eu",
+        "intl"
+      ],
       "url": "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/a-kozossegi-programok-es-fesztivalok-kollegiuma-nyilt-palyazati-felhivasa-4/",
-      "title":  {"hu": "NKA – önrész-támogatás Kreatív Európa-nyerteseknek"},
-      "funder": {"hu": "Nemzeti Kulturális Alap, Közösségi Programok és Fesztiválok Kollégiuma"},
+      "title": {
+        "hu": "NKA – önrész-támogatás Kreatív Európa-nyerteseknek"
+      },
+      "funder": {
+        "hu": "Nemzeti Kulturális Alap, Közösségi Programok és Fesztiválok Kollégiuma"
+      },
       "who": {
         "hu": "Kreatív Európa együttműködési projektben vagy platformban nyertes magyarországi és határon túli magyar kulturális szervezetek, fő- vagy társszervezőként. Legfeljebb 40 000 euró, a vállalt önrész mértékéig."
       }
@@ -71,12 +197,30 @@
     {
       "id": "crea-cult-2027-lit",
       "status": "open",
-      "deadlines": ["2027-01-27T17:00:00+01:00"],
-      "langs": ["ro", "hu", "en"],
-      "tags": ["eu", "publishing", "intl"],
+      "deadlines": [
+        "2027-01-27T17:00:00+01:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "publishing",
+        "intl"
+      ],
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CREA-CULT-2027-LIT",
-      "title":  {"hu": "Kreatív Európa – európai irodalmi művek terjesztése", "ro": "Europa Creativă – circulația operelor literare europene", "en": "Creative Europe – circulation of European literary works"},
-      "funder": {"hu": "Európai Unió, Kreatív Európa", "ro": "Uniunea Europeană, Europa Creativă", "en": "European Union, Creative Europe"},
+      "title": {
+        "hu": "Kreatív Európa – európai irodalmi művek terjesztése",
+        "ro": "Europa Creativă – circulația operelor literare europene",
+        "en": "Creative Europe – circulation of European literary works"
+      },
+      "funder": {
+        "hu": "Európai Unió, Kreatív Európa",
+        "ro": "Uniunea Europeană, Europa Creativă",
+        "en": "European Union, Creative Europe"
+      },
       "who": {
         "hu": "Könyvkiadással foglalkozó szervezetek, egyedül vagy konzorciumban, legalább öt európai irodalmi mű fordítására, kiadására és népszerűsítésére. Legfeljebb 300 000 euró.",
         "ro": "Organizații din sectorul editorial, individual sau în consorțiu, pentru traducerea, publicarea și promovarea a cel puțin cinci opere literare europene. Până la 300.000 euro.",
@@ -86,12 +230,29 @@
     {
       "id": "visegrad-grants-2027-02",
       "status": "open",
-      "deadlines": ["2027-02-01T12:00:00+01:00"],
-      "langs": ["ro", "hu", "en"],
-      "tags": ["intl", "community"],
+      "deadlines": [
+        "2027-02-01T12:00:00+01:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "intl",
+        "community"
+      ],
       "url": "https://www.visegradfund.org/apply/grants/visegrad-grants/",
-      "title":  {"hu": "Nemzetközi Visegrádi Alap – Visegrad Grants", "ro": "Fondul Internațional Vișegrad – Visegrad Grants", "en": "International Visegrad Fund – Visegrad Grants"},
-      "funder": {"hu": "Nemzetközi Visegrádi Alap", "ro": "Fondul Internațional Vișegrad", "en": "International Visegrad Fund"},
+      "title": {
+        "hu": "Nemzetközi Visegrádi Alap – Visegrad Grants",
+        "ro": "Fondul Internațional Vișegrad – Visegrad Grants",
+        "en": "International Visegrad Fund – Visegrad Grants"
+      },
+      "funder": {
+        "hu": "Nemzetközi Visegrádi Alap",
+        "ro": "Fondul Internațional Vișegrad",
+        "en": "International Visegrad Fund"
+      },
       "who": {
         "hu": "Civil szervezetek, önkormányzatok, intézmények legalább három V4-országbeli partnerrel; romániai szervezet további partnerként csatlakozhat.",
         "ro": "ONG-uri, autorități locale și instituții, cu parteneri din cel puțin trei țări V4; organizațiile din România se pot alătura ca parteneri suplimentari.",
@@ -101,199 +262,433 @@
     {
       "id": "cerv-european-remembrance",
       "status": "open",
-      "deadlines": ["2027-02-24T17:00:00+01:00"],
-      "langs": ["ro", "hu", "en"],
-      "tags": ["eu", "memory", "intl"],
+      "deadlines": [
+        "2027-02-24T17:00:00+01:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "memory",
+        "intl"
+      ],
       "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/wp-call/2026/call-fiche_cerv-2026-citizens-rem_en.pdf",
-      "title":  {"hu": "CERV – Európai emlékezet", "ro": "CERV – Memoria europeană", "en": "CERV – European Remembrance"},
-      "funder": {"hu": "Európai Bizottság, CERV program", "ro": "Comisia Europeană, programul CERV", "en": "European Commission, CERV programme"},
+      "title": {
+        "hu": "CERV – Európai emlékezet",
+        "ro": "CERV – Memoria europeană",
+        "en": "CERV – European Remembrance"
+      },
+      "funder": {
+        "hu": "Európai Bizottság, CERV program",
+        "ro": "Comisia Europeană, programul CERV",
+        "en": "European Commission, CERV programme"
+      },
       "who": {
         "hu": "Nonprofit szervezetek és intézmények legalább kéttagú konzorciumban, az európai történelem és az emlékezetkultúra témáiban. 50 000–500 000 euró.",
         "ro": "Organizații nonprofit și instituții, în consorțiu de cel puțin doi parteneri, pe teme de istorie europeană și cultura memoriei. 50.000–500.000 euro.",
         "en": "Non-profit organisations and institutions in a consortium of at least two, on European history and remembrance. EUR 50,000–500,000."
       }
     },
-
     {
       "id": "nea-kulhoni-2027",
       "status": "expected",
       "until": "2026-12-31",
-      "langs": ["hu"],
-      "tags": ["hu", "community"],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "community"
+      ],
       "url": "https://bgazrt.hu/",
-      "title":  {"hu": "Nemzeti Együttműködési Alap – külhoni civil szervezetek, 2027"},
-      "funder": {"hu": "Bethlen Gábor Alapkezelő"},
-      "who":    {"hu": "Határon túli magyar civil szervezetek."},
-      "when":   {"hu": "Kiírás várhatóan 2026 novemberében"}
+      "title": {
+        "hu": "Nemzeti Együttműködési Alap – külhoni civil szervezetek, 2027"
+      },
+      "funder": {
+        "hu": "Bethlen Gábor Alapkezelő"
+      },
+      "who": {
+        "hu": "Határon túli magyar civil szervezetek."
+      },
+      "when": {
+        "hu": "Kiírás várhatóan 2026 novemberében"
+      }
     },
     {
       "id": "erosodo-karpat-medence-2027",
       "status": "expected",
       "until": "2026-12-31",
-      "langs": ["hu"],
-      "tags": ["hu", "community", "festival"],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "community",
+        "festival"
+      ],
       "url": "https://bgazrt.hu/",
-      "title":  {"hu": "Erősödő Kárpát-medence Program 2027"},
-      "funder": {"hu": "Bethlen Gábor Alapkezelő"},
-      "who":    {"hu": "Külhoni magyar szervezetek 2027-ben megvalósuló programjai és rendezvényei."},
-      "when":   {"hu": "Határidő várhatóan 2026 november–decemberében"}
+      "title": {
+        "hu": "Erősödő Kárpát-medence Program 2027"
+      },
+      "funder": {
+        "hu": "Bethlen Gábor Alapkezelő"
+      },
+      "who": {
+        "hu": "Külhoni magyar szervezetek 2027-ben megvalósuló programjai és rendezvényei."
+      },
+      "when": {
+        "hu": "Határidő várhatóan 2026 november–decemberében"
+      }
     },
     {
       "id": "csoori-2027",
       "status": "expected",
       "until": "2027-01-31",
-      "langs": ["hu"],
-      "tags": ["hu", "folk", "heritage"],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "folk",
+        "heritage"
+      ],
       "url": "https://emet.gov.hu/kategoria/csoori-sandor-alap-aktualis-palyazati-felhivasok/",
-      "title":  {"hu": "Csoóri Sándor Program 2027"},
-      "funder": {"hu": "Nemzeti Kulturális Támogatáskezelő"},
-      "who":    {"hu": "Néptánc- és népzenei együttesek, kézműves közösségek, határon túli magyar csoportok is."},
-      "when":   {"hu": "Határidő várhatóan 2027. január közepén"}
+      "title": {
+        "hu": "Csoóri Sándor Program 2027"
+      },
+      "funder": {
+        "hu": "Nemzeti Kulturális Támogatáskezelő"
+      },
+      "who": {
+        "hu": "Néptánc- és népzenei együttesek, kézműves közösségek, határon túli magyar csoportok is."
+      },
+      "when": {
+        "hu": "Határidő várhatóan 2027. január közepén"
+      }
     },
     {
       "id": "erasmus-youth-2027",
       "status": "expected",
       "until": "2027-03-15",
-      "langs": ["ro", "hu", "en"],
-      "tags": ["eu", "youth", "mobility"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "youth",
+        "mobility"
+      ],
       "url": "https://www.erasmusplus.ro/",
-      "title":  {"hu": "Erasmus+ ifjúsági mobilitás és Európai Szolidaritási Testület", "ro": "Erasmus+ mobilitate tineret și Corpul European de Solidaritate", "en": "Erasmus+ youth mobility and European Solidarity Corps"},
-      "funder": {"hu": "Európai Bizottság / ANPCDEFP", "ro": "Comisia Europeană / ANPCDEFP", "en": "European Commission / ANPCDEFP"},
+      "title": {
+        "hu": "Erasmus+ ifjúsági mobilitás és Európai Szolidaritási Testület",
+        "ro": "Erasmus+ mobilitate tineret și Corpul European de Solidaritate",
+        "en": "Erasmus+ youth mobility and European Solidarity Corps"
+      },
+      "funder": {
+        "hu": "Európai Bizottság / ANPCDEFP",
+        "ro": "Comisia Europeană / ANPCDEFP",
+        "en": "European Commission / ANPCDEFP"
+      },
       "who": {
         "hu": "Ifjúsági cserék, ifjúsági munkások mobilitása, fiatalok részvételi projektjei, kulturális tartalommal is.",
         "ro": "Schimburi de tineri, mobilitatea lucrătorilor de tineret, proiecte de participare a tinerilor, inclusiv cu conținut cultural.",
         "en": "Youth exchanges, youth worker mobility and youth participation projects, including cultural ones."
       },
-      "when": {"hu": "Határidő várhatóan 2027 február–márciusában", "ro": "Termen estimat: februarie–martie 2027", "en": "Expected deadline: February–March 2027"}
+      "when": {
+        "hu": "Határidő várhatóan 2027 február–márciusában",
+        "ro": "Termen estimat: februarie–martie 2027",
+        "en": "Expected deadline: February–March 2027"
+      }
     },
     {
       "id": "erasmus-ka210-2027",
       "status": "expected",
       "until": "2027-03-15",
-      "langs": ["ro", "hu", "en"],
-      "tags": ["eu", "education", "intl"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "education",
+        "intl"
+      ],
       "url": "https://www.erasmusplus.ro/",
-      "title":  {"hu": "Erasmus+ kis léptékű partnerségek (KA210)", "ro": "Erasmus+ parteneriate la scară mică (KA210)", "en": "Erasmus+ small-scale partnerships (KA210)"},
-      "funder": {"hu": "Európai Bizottság / ANPCDEFP", "ro": "Comisia Europeană / ANPCDEFP", "en": "European Commission / ANPCDEFP"},
+      "title": {
+        "hu": "Erasmus+ kis léptékű partnerségek (KA210)",
+        "ro": "Erasmus+ parteneriate la scară mică (KA210)",
+        "en": "Erasmus+ small-scale partnerships (KA210)"
+      },
+      "funder": {
+        "hu": "Európai Bizottság / ANPCDEFP",
+        "ro": "Comisia Europeană / ANPCDEFP",
+        "en": "European Commission / ANPCDEFP"
+      },
       "who": {
         "hu": "Felnőttoktatási, ifjúsági és iskolai szervezetek közösségi és kulturális tanulási projektjei, nemzetközi partnerrel.",
         "ro": "Proiecte de învățare comunitară și culturală în educația adulților, tineret și școli, cu parteneri internaționali.",
         "en": "Community and cultural learning projects in adult education, youth and schools, with international partners."
       },
-      "when": {"hu": "Határidő várhatóan 2027. március elején", "ro": "Termen estimat: începutul lunii martie 2027", "en": "Expected deadline: early March 2027"}
+      "when": {
+        "hu": "Határidő várhatóan 2027. március elején",
+        "ro": "Termen estimat: începutul lunii martie 2027",
+        "en": "Expected deadline: early March 2027"
+      }
     },
     {
       "id": "afcn-sesiunea-ii-2027",
       "status": "expected",
       "until": "2027-05-31",
-      "langs": ["ro", "hu", "en"],
-      "tags": ["ro", "heritage", "performing", "folk"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "ro",
+        "heritage",
+        "performing",
+        "folk"
+      ],
       "url": "https://www.afcn-proiecte.ro/",
-      "title":  {"hu": "AFCN – Sesiunea II/2027", "ro": "AFCN – Sesiunea II/2027", "en": "AFCN – Session II/2027"},
-      "funder": {"hu": "Administrația Fondului Cultural Național (Románia)", "ro": "Administrația Fondului Cultural Național", "en": "Romania's National Cultural Fund Administration"},
+      "title": {
+        "hu": "AFCN – Sesiunea II/2027",
+        "ro": "AFCN – Sesiunea II/2027",
+        "en": "AFCN – Session II/2027"
+      },
+      "funder": {
+        "hu": "Administrația Fondului Cultural Național (Románia)",
+        "ro": "Administrația Fondului Cultural Național",
+        "en": "Romania's National Cultural Fund Administration"
+      },
       "who": {
         "hu": "Egyesületek, alapítványok, közintézmények, PFA-k; minden kulturális terület.",
         "ro": "Asociații, fundații, instituții publice, PFA-uri; toate domeniile culturale.",
         "en": "Associations, foundations, public institutions and sole traders; all cultural fields."
       },
-      "when": {"hu": "Határidő várhatóan 2027 tavaszán (rendes ütem: március)", "ro": "Termen estimat: primăvara 2027 (calendarul obișnuit: martie)", "en": "Expected deadline: spring 2027 (usual cycle: March)"}
+      "when": {
+        "hu": "Határidő várhatóan 2027 tavaszán (rendes ütem: március)",
+        "ro": "Termen estimat: primăvara 2027 (calendarul obișnuit: martie)",
+        "en": "Expected deadline: spring 2027 (usual cycle: March)"
+      }
     },
     {
       "id": "creative-europe-cooperation-2027",
       "status": "expected",
       "until": "2027-06-30",
-      "langs": ["ro", "hu", "en"],
-      "tags": ["eu", "intl", "heritage", "performing"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "intl",
+        "heritage",
+        "performing"
+      ],
       "url": "https://culture.ec.europa.eu/creative-europe",
-      "title":  {"hu": "Kreatív Európa – európai együttműködési projektek", "ro": "Europa Creativă – proiecte de cooperare europeană", "en": "Creative Europe – European cooperation projects"},
-      "funder": {"hu": "Európai Unió, Kreatív Európa", "ro": "Uniunea Europeană, Europa Creativă", "en": "European Union, Creative Europe"},
+      "title": {
+        "hu": "Kreatív Európa – európai együttműködési projektek",
+        "ro": "Europa Creativă – proiecte de cooperare europeană",
+        "en": "Creative Europe – European cooperation projects"
+      },
+      "funder": {
+        "hu": "Európai Unió, Kreatív Európa",
+        "ro": "Uniunea Europeană, Europa Creativă",
+        "en": "European Union, Creative Europe"
+      },
       "who": {
         "hu": "Kulturális szervezetek nemzetközi partnerségben; kis, közepes és nagy léptékű projektek.",
         "ro": "Organizații culturale în parteneriat internațional; proiecte la scară mică, medie și mare.",
         "en": "Cultural organisations in international partnerships; small, medium and large-scale projects."
       },
-      "when": {"hu": "Kiírás 2027 első negyedévében", "ro": "Lansare în trimestrul I 2027", "en": "Call expected in Q1 2027"}
+      "when": {
+        "hu": "Kiírás 2027 első negyedévében",
+        "ro": "Lansare în trimestrul I 2027",
+        "en": "Call expected in Q1 2027"
+      }
     },
     {
       "id": "mol-hatartalan-nyar-2027",
       "status": "expected",
       "until": "2027-03-31",
-      "langs": ["hu"],
-      "tags": ["hu", "private", "festival"],
-      "title":  {"hu": "MOL – Határtalan nyár 2027"},
-      "funder": {"hu": "MOL-Új Európa Alapítvány"},
-      "who":    {"hu": "Magyarország szomszédos országaiban megrendezett nyári fesztiválok fő szervezői, legalább 500 résztvevővel."},
-      "when":   {"hu": "Határidő várhatóan 2027 márciusában"}
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "private",
+        "festival"
+      ],
+      "title": {
+        "hu": "MOL – Határtalan nyár 2027"
+      },
+      "funder": {
+        "hu": "MOL-Új Európa Alapítvány"
+      },
+      "who": {
+        "hu": "Magyarország szomszédos országaiban megrendezett nyári fesztiválok fő szervezői, legalább 500 résztvevővel."
+      },
+      "when": {
+        "hu": "Határidő várhatóan 2027 márciusában"
+      }
     },
     {
       "id": "communitas-2027",
       "status": "expected",
       "until": "2027-05-31",
-      "langs": ["hu"],
-      "tags": ["ro", "community", "folk", "publishing"],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "ro",
+        "community",
+        "folk",
+        "publishing"
+      ],
       "url": "https://www.communitas.ro/",
-      "title":  {"hu": "Communitas Alapítvány – művelődési tevékenységek, könyvkiadás"},
-      "funder": {"hu": "Communitas Alapítvány"},
-      "who":    {"hu": "Romániai civil szervezetek, nonprofit intézmények, egyházközségek: hagyományőrzés, amatőr és hivatásos művészet, könyvkiadás."},
-      "when":   {"hu": "Határidő várhatóan 2027 májusában"}
+      "title": {
+        "hu": "Communitas Alapítvány – művelődési tevékenységek, könyvkiadás"
+      },
+      "funder": {
+        "hu": "Communitas Alapítvány"
+      },
+      "who": {
+        "hu": "Romániai civil szervezetek, nonprofit intézmények, egyházközségek: hagyományőrzés, amatőr és hivatásos művészet, könyvkiadás."
+      },
+      "when": {
+        "hu": "Határidő várhatóan 2027 májusában"
+      }
     },
     {
       "id": "icr-cantemir-2027",
       "status": "expected",
       "until": "2027-05-31",
-      "langs": ["ro", "en"],
-      "tags": ["ro", "intl", "performing"],
+      "langs": [
+        "ro",
+        "en"
+      ],
+      "tags": [
+        "ro",
+        "intl",
+        "performing"
+      ],
       "url": "https://www.icr.ro/",
-      "title":  {"ro": "ICR – Programul Cantemir", "en": "Romanian Cultural Institute – Cantemir programme"},
-      "funder": {"ro": "Institutul Cultural Român", "en": "Romanian Cultural Institute"},
+      "title": {
+        "ro": "ICR – Programul Cantemir",
+        "en": "Romanian Cultural Institute – Cantemir programme"
+      },
+      "funder": {
+        "ro": "Institutul Cultural Român",
+        "en": "Romanian Cultural Institute"
+      },
       "who": {
         "ro": "Proiecte care prezintă cultura română în străinătate: arte ale spectacolului și arte vizuale.",
         "en": "Projects presenting Romanian culture abroad: performing and visual arts."
       },
-      "when": {"ro": "Termen estimat: primăvara 2027", "en": "Expected deadline: spring 2027"}
+      "when": {
+        "ro": "Termen estimat: primăvara 2027",
+        "en": "Expected deadline: spring 2027"
+      }
     },
     {
       "id": "consilii-judetene-2027",
       "status": "expected",
       "until": "2027-07-31",
-      "langs": ["ro", "hu"],
-      "tags": ["ro", "local"],
-      "title":  {"hu": "Megyei tanácsok kulturális pályázatai (350/2005-ös törvény)", "ro": "Consiliile județene – finanțări pentru cultură (Legea 350/2005)"},
-      "funder": {"hu": "Megyei tanácsok", "ro": "Consiliile județene"},
+      "langs": [
+        "ro",
+        "hu"
+      ],
+      "tags": [
+        "ro",
+        "local"
+      ],
+      "title": {
+        "hu": "Megyei tanácsok kulturális pályázatai (350/2005-ös törvény)",
+        "ro": "Consiliile județene – finanțări pentru cultură (Legea 350/2005)"
+      },
+      "funder": {
+        "hu": "Megyei tanácsok",
+        "ro": "Consiliile județene"
+      },
       "who": {
         "hu": "A megyében bejegyzett vagy ott működő civil szervezetek.",
         "ro": "ONG-uri înregistrate sau active în județ."
       },
-      "when": {"hu": "Határidők várhatóan 2027 április–júliusában, megyénként eltérően", "ro": "Termene estimate: aprilie–iulie 2027, diferit de la un județ la altul"}
+      "when": {
+        "hu": "Határidők várhatóan 2027 április–júliusában, megyénként eltérően",
+        "ro": "Termene estimate: aprilie–iulie 2027, diferit de la un județ la altul"
+      }
     },
     {
       "id": "municipii-2027",
       "status": "expected",
       "until": "2027-09-30",
-      "langs": ["ro", "hu"],
-      "tags": ["ro", "local"],
-      "title":  {"hu": "Városi kulturális pályázatok", "ro": "Finanțări culturale ale municipiilor"},
-      "funder": {"hu": "Polgármesteri hivatalok", "ro": "Primării"},
+      "langs": [
+        "ro",
+        "hu"
+      ],
+      "tags": [
+        "ro",
+        "local"
+      ],
+      "title": {
+        "hu": "Városi kulturális pályázatok",
+        "ro": "Finanțări culturale ale municipiilor"
+      },
+      "funder": {
+        "hu": "Polgármesteri hivatalok",
+        "ro": "Primării"
+      },
       "who": {
         "hu": "A városban működő kulturális szervezetek.",
         "ro": "Organizații culturale active în localitate."
       },
-      "when": {"hu": "Határidők várhatóan 2027 április–júliusában, egyes városokban ősszel", "ro": "Termene estimate: aprilie–iulie 2027, în unele orașe toamna"}
+      "when": {
+        "hu": "Határidők várhatóan 2027 április–júliusában, egyes városokban ősszel",
+        "ro": "Termene estimate: aprilie–iulie 2027, în unele orașe toamna"
+      }
     },
     {
       "id": "see-norvegia-cultura",
       "status": "expected",
       "until": "2027-12-31",
-      "langs": ["ro", "hu", "en"],
-      "tags": ["intl", "heritage"],
-      "title":  {"hu": "EGT és Norvég Alap 2021–2028 – kulturális program", "ro": "Granturile SEE și Norvegiene 2021–2028 – programul Cultură", "en": "EEA and Norway Grants 2021–2028 – Culture programme"},
-      "funder": {"hu": "Kulturális Minisztérium (Románia)", "ro": "Ministerul Culturii", "en": "Romanian Ministry of Culture"},
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "intl",
+        "heritage"
+      ],
+      "title": {
+        "hu": "EGT és Norvég Alap 2021–2028 – kulturális program",
+        "ro": "Granturile SEE și Norvegiene 2021–2028 – programul Cultură",
+        "en": "EEA and Norway Grants 2021–2028 – Culture programme"
+      },
+      "funder": {
+        "hu": "Kulturális Minisztérium (Románia)",
+        "ro": "Ministerul Culturii",
+        "en": "Romanian Ministry of Culture"
+      },
       "who": {
         "hu": "Romániai kulturális szervezetek; 47,5 millió eurós keret.",
         "ro": "Organizații culturale din România; buget de 47,5 milioane euro.",
         "en": "Cultural organisations in Romania; EUR 47.5 million budget."
       },
-      "when": {"hu": "Figyelendő: kiírási dátum még nincs", "ro": "De urmărit: nu există încă dată de lansare", "en": "To watch: no launch date yet"}
+      "when": {
+        "hu": "Figyelendő: kiírási dátum még nincs",
+        "ro": "De urmărit: nu există încă dată de lansare",
+        "en": "To watch: no launch date yet"
+      }
     }
   ]
 }
