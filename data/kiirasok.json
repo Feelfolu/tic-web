@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "note": "TIC pályázati naptár adatfájl. Az oldalon csak a status: open bejegyzések látszanak (deadlines kötelező); egy nyitott kiírás a határidő után 24 órával magától eltűnik. A status: expected bejegyzések belső figyelőlista: az oldalon nem jelennek meg, amikor a kiírás megnyílik, open-ra kell állítani és határidőt adni neki. langs: melyik nyelvi változatban jelenjen meg.",
   "tags": {
     "ro": {
@@ -94,6 +94,67 @@
     }
   },
   "calls": [
+    {
+      "id": "rmdsz-nok-mosolygo-karacsony-2026",
+      "status": "open",
+      "deadlines": [
+        "2026-11-13T23:59:00+02:00"
+      ],
+      "dateOnly": true,
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "ro",
+        "community"
+      ],
+      "url": "https://nok.rmdsz.ro/palyazati-kiiras-mosolygo-karacsony-es-egyszulosok-karacsonya-2/",
+      "title": {
+        "hu": "Mosolygó Karácsony és Egyszülősök Karácsonya"
+      },
+      "funder": {
+        "hu": "RMDSZ Nőszervezet"
+      },
+      "who": {
+        "hu": "Bejegyzett civil szervezetek és alapítványok 2026. december 2–30. között megvalósuló adventi és karácsonyi közösségi programjaira: kézműves foglalkozások, jótékonysági akciók, közösségi estek; külön fókusz az egyszülős családokon. Vissza nem térítendő résztámogatás."
+      }
+    },
+    {
+      "id": "transatlantic-stars-2027",
+      "status": "open",
+      "deadlines": [
+        "2026-11-15T23:59:00+02:00"
+      ],
+      "dateOnly": true,
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "individuals",
+        "mobility",
+        "intl",
+        "performing"
+      ],
+      "url": "https://mailchi.mp/trsproject/3q8lcvd353",
+      "title": {
+        "hu": "Transatlantic Stars – rezidencia és szakmai program az USA-ban, 2027",
+        "ro": "Transatlantic Stars – rezidență și program profesional în SUA, 2027",
+        "en": "Transatlantic Stars – US residency and industry programme, 2027"
+      },
+      "funder": {
+        "hu": "Az Európai Unió washingtoni delegációja",
+        "ro": "Delegația Uniunii Europene în SUA",
+        "en": "Delegation of the European Union to the US"
+      },
+      "who": {
+        "hu": "Pályaívük közepén járó, uniós állampolgárságú képzőművészek, filmrendezők és zenészek; 2027 tavaszán közös alkotómunka amerikai művészekkel. Jelentkezni 23:59-ig (közép-európai idő) lehet, vagy amíg be nem érkezik 350 pályázat.",
+        "ro": "Artiști vizuali, regizori de film și muzicieni la mijlocul carierei, cetățeni ai UE; în primăvara lui 2027, creație comună cu artiști americani. Înscrierile se închid la 23:59 (ora Europei Centrale) sau la atingerea a 350 de candidaturi.",
+        "en": "Mid-career visual artists, film directors and musicians who are EU citizens; joint work with American artists in spring 2027. Applications close at 23:59 CET or once 350 applications are received."
+      }
+    },
     {
       "id": "raiffeisen-comunitati-16",
       "status": "open",
