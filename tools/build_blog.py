@@ -208,7 +208,6 @@ def build_list(posts):
     for lang in LANGS:
         u = UI[lang]
         own = [p for p in posts if p["lang"] == lang]
-        other = [p for p in posts if p["lang"] != lang]
         switch = "\n".join(
             f'          <button type="button" data-set-lang="{c}" aria-pressed="{"true" if c == lang else "false"}">{c.upper()}</button>' for c in LANGS)
         hero = f"""    <div class="hero hero-sm">
@@ -217,13 +216,7 @@ def build_list(posts):
       <p>{e(u['list_intro'])}</p>
     </div>"""
         body = "\n".join(post_card(p, lang) for p in own) if own else f'        <p class="calls-empty">{e(u["empty"])}</p>'
-        other_html = ""
-        if other:
-            other_html = f"""
-      <h2 class="cal-group">{e(u['other'])}</h2>
-      <div class="posts">
-{chr(10).join(post_card(p, lang, show_lang=True) for p in other)}
-      </div>"""
+        other_html = ""  # csak a saját nyelvű cikkek jelennek meg
         blocks.append(f"""<!-- ======================= {lang.upper()} ======================= -->
 <div data-lang="{lang}"{"" if lang == "ro" else " hidden"}>
 {header(lang, "blog.html", switch, hero)}
