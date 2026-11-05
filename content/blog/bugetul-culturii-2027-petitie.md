@@ -3,7 +3,9 @@ title: 74 de lei pe locuitor: de ce se cere dublarea bugetului culturii în 2027
 date: 2026-11-05
 lang: ro
 summary: Uniunile de creatori cer ca în 2027 Ministerul Culturii să primească cel puțin 0,15% din PIB. Ce înseamnă asta pentru o organizație culturală și ce poți face acum.
-draft: true
+image: assets/blog/kultura-koltsegvetes-2027.jpg
+image_alt: Ilustrație pictată: o scenă, o carte deschisă, o vioară și un tablou sprijinite pe două teancuri de monede, cu un oraș transilvănean în fundal.
+og_image: assets/blog/kultura-koltsegvetes-2027-og.jpg
 ---
 **Pe scurt**
 

@@ -3,7 +3,9 @@ title: Romania spends 0.07% of GDP on its culture ministry. Its creators want th
 date: 2026-11-05
 lang: en
 summary: Romania's creators' unions are petitioning for at least 0.15% of GDP for culture in the 2027 budget. What it means if you work with Romanian partners.
-draft: true
+image: assets/blog/kultura-koltsegvetes-2027.jpg
+image_alt: Painted illustration: a stage, an open book, a violin and a painting resting on two stacks of coins, with a Transylvanian town behind.
+og_image: assets/blog/kultura-koltsegvetes-2027-og.jpg
 ---
 **In short**
 

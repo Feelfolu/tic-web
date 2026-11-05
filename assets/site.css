@@ -259,3 +259,10 @@ html{scroll-behavior:smooth}
 .langs a,.langs .lang-current{font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--muted);border-radius:999px;padding:5px 11px;text-decoration:none}
 .langs a:hover{color:var(--ink)}
 .langs .lang-current{background:var(--brick);color:#fff}
+.post-card.has-thumb{grid-template-columns:minmax(0,240px) minmax(0,1fr);column-gap:24px;align-items:start}
+.post-card.has-thumb>*:not(.post-thumb){grid-column:2}
+.post-thumb{grid-column:1;grid-row:1 / span 4;display:block;border-radius:6px;overflow:hidden;aspect-ratio:16/9}
+.post-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.post-figure{margin:0 0 34px;max-width:880px}
+.post-figure img{width:100%;height:auto;border-radius:8px;display:block}
+@media (max-width:640px){.post-card.has-thumb{grid-template-columns:1fr}.post-card.has-thumb>*:not(.post-thumb){grid-column:1}.post-thumb{grid-row:auto}}

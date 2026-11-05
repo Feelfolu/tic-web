@@ -3,7 +3,9 @@ title: Hetvennégy lej fejenként: kétszer annyit kérnek a kultúrára 2027-re
 date: 2026-11-05
 lang: hu
 summary: A romániai alkotói szövetségek petícióban kérik, hogy 2027-ben a duplájára nőjön a kultúra állami kerete. Mit jelent ez egy erdélyi magyar egyesületnek, és mit tehetsz most?
-draft: true
+image: assets/blog/kultura-koltsegvetes-2027.jpg
+image_alt: Festett illusztráció: színpad, nyitott könyv, hegedű és festmény két pénzérme-oszlopon, a háttérben erdélyi város.
+og_image: assets/blog/kultura-koltsegvetes-2027-og.jpg
 ---
 **Röviden**
 

@@ -12,7 +12,9 @@ Cikkfejléc (a fájl elején, két --- között):
     lang: hu            # hu | ro | en
     summary: Egy-két mondatos összefoglaló (lista + Facebook-előnézet)
     slug: a-cikk-cime   # nem kötelező; alapból a fájlnév
-    image: assets/blog/kep.jpg   # nem kötelező; Facebook-előnézet képe
+    image: assets/blog/kep.jpg   # nem kötelező; a cikk képe (lista + cikk teteje)
+    image_alt: A kép leírása     # nem kötelező, de ajánlott, ha van kép
+    og_image: assets/blog/kep-og.jpg   # nem kötelező; Facebook-előnézet (1200×630), alapból az image
     draft: true         # nem kötelező; ha true, nem jelenik meg
     ---
 
@@ -182,11 +184,19 @@ FOOTER = """<footer>
 """
 
 
+def abs_url(path):
+    return path if path.startswith("http") else f"{SITE}/{path.lstrip('/')}"
+
+
 def post_card(p, lang_ui, show_lang=False):
     u = UI[lang_ui]
     badge = f' <span class="tag">{e(LANG_NAME[lang_ui][p["lang"]])}</span>' if show_lang else ""
-    return f"""        <article class="post-card" lang="{p['lang']}">
-          <p class="post-date"><time datetime="{p['date'].isoformat()}">{e(fmt_date(p['date'], p['lang']))}</time>{badge}</p>
+    thumb = ""
+    if p.get("image"):
+        thumb = (f'          <a class="post-thumb" href="/blog/{p["slug"]}.html" tabindex="-1" aria-hidden="true">'
+                 f'<img src="/{e(p["image"].lstrip("/"))}" alt="" loading="lazy"></a>\n')
+    return f"""        <article class="post-card{' has-thumb' if thumb else ''}" lang="{p['lang']}">
+{thumb}          <p class="post-date"><time datetime="{p['date'].isoformat()}">{e(fmt_date(p['date'], p['lang']))}</time>{badge}</p>
           <h2><a href="/blog/{p['slug']}.html">{e(p['title'])}</a></h2>
           <p>{e(p['summary'])}</p>
           <p class="post-more"><a href="/blog/{p['slug']}.html">{e(u['read'])} →</a></p>
@@ -248,8 +258,12 @@ def build_post(p):
       <p>{e(p['summary'])}</p>
     </div>"""
     image = None
+    if p.get("og_image") or p.get("image"):
+        image = abs_url(p.get("og_image") or p["image"])
+    figure = ""
     if p.get("image"):
-        image = p["image"] if p["image"].startswith("http") else f"{SITE}/{p['image'].lstrip('/')}"
+        figure = (f'      <figure class="post-figure"><img src="/{e(p["image"].lstrip("/"))}" '
+                  f'alt="{e(p.get("image_alt", ""))}"></figure>\n')
     extra = f'<meta property="article:published_time" content="{p["date"].isoformat()}">\n'
     share = "https://www.facebook.com/sharer/sharer.php?u=" + url
     page = (head(f"{p['title']} – Transylvanian Institute for Culture", p["summary"], url, lang, "article", image, extra)
@@ -257,7 +271,7 @@ def build_post(p):
 <main>
   <section>
     <div class="wrap">
-      <article class="prose">
+{figure}      <article class="prose">
 {p['html']}
       </article>
       <div class="post-actions">
