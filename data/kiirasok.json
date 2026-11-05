@@ -91,9 +91,137 @@
       "hu": "Önrész-támogatás",
       "ro": "Cofinanțare",
       "en": "Co-financing"
+    },
+    "media": {
+      "hu": "Sajtó, média",
+      "ro": "Presă, media",
+      "en": "Media"
     }
   },
   "calls": [
+    {
+      "id": "bga-elektronikus-sajto-2026",
+      "status": "open",
+      "deadlines": [
+        "2026-11-06T14:00:00+01:00"
+      ],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "media"
+      ],
+      "url": "https://bgazrt.hu/2026-evi-hataron-tuli-elektronikus-sajto-tamogatasa-cimu-palyazati-kiiras/",
+      "title": {
+        "hu": "Határon túli elektronikus sajtó támogatása 2026"
+      },
+      "funder": {
+        "hu": "Bethlen Gábor Alapkezelő"
+      },
+      "who": {
+        "hu": "A Kárpát-medencében, Magyarország határain kívül működő, magyar nyelvű vagy magyarul is szerkesztett elektronikus sajtótermékek kiadói, működésre és tényfeltáró, terepmunkán alapuló tartalmakra. Beadás a NIR-rendszerben."
+      }
+    },
+    {
+      "id": "culture-helps-solidarity-collab-2",
+      "status": "open",
+      "deadlines": [
+        "2026-11-10T13:00:00+01:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "intl",
+        "community"
+      ],
+      "url": "https://insha-osvita.org/en/?p=3478",
+      "title": {
+        "hu": "Culture Helps Solidarity – együttműködési támogatás, 2. forduló",
+        "ro": "Culture Helps Solidarity – granturi de colaborare, runda a 2-a",
+        "en": "Culture Helps Solidarity – collaboration grants, round 2"
+      },
+      "funder": {
+        "hu": "European Cultural Foundation, Insha Osvita, zusa, VETERANKA",
+        "ro": "European Cultural Foundation, Insha Osvita, zusa, VETERANKA",
+        "en": "European Cultural Foundation, Insha Osvita, zusa, VETERANKA"
+      },
+      "who": {
+        "hu": "Legalább kéttagú partnerség, amelyben van ukrajnai jogi státuszú és Kreatív Európa-országbeli kulturális vagy civil szervezet; a menekült ukránok kulturális részvételét és befogadását segítő projektek. Legfeljebb 20 000 euró (két partner) vagy 30 000 euró (három vagy több partner).",
+        "ro": "Parteneriate de cel puțin două organizații, cu un partener cu statut juridic în Ucraina și unul dintr-o țară Europa Creativă; proiecte culturale pentru participarea și integrarea ucrainenilor strămutați. Până la 20.000 euro (doi parteneri) sau 30.000 euro (trei sau mai mulți).",
+        "en": "Partnerships of at least two organisations, including one with legal status in Ukraine and one in a Creative Europe country; cultural projects supporting the participation and integration of displaced Ukrainians. Up to EUR 20,000 (two partners) or EUR 30,000 (three or more)."
+      }
+    },
+    {
+      "id": "craft-tour-open-call",
+      "status": "open",
+      "deadlines": [
+        "2026-11-16T12:00:00+01:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "folk",
+        "heritage"
+      ],
+      "url": "https://craft-tour.eu/open-call/",
+      "title": {
+        "hu": "CRAFT-TOUR – támogatás kézműveseknek",
+        "ro": "CRAFT-TOUR – granturi pentru meșteșugari",
+        "en": "CRAFT-TOUR – grants for craftspeople"
+      },
+      "funder": {
+        "hu": "CRAFT-TOUR konzorcium, uniós társfinanszírozással",
+        "ro": "Consorțiul CRAFT-TOUR, cu cofinanțare UE",
+        "en": "CRAFT-TOUR consortium, co-funded by the EU"
+      },
+      "who": {
+        "hu": "Uniós tagállamban bejegyzett hivatásos kézművesek és legfeljebb ötfős kézműves vállalkozások, meghatározott ágazatokban (pl. szövés, viselet, faművesség, kerámia, ékszer, hangszerkészítés). 5000 euró átalánytámogatás önrész nélkül, kilenc hónap mentorálással; megvalósítás 2027 januárjától.",
+        "ro": "Meșteșugari profesioniști și microîntreprinderi meșteșugărești de până la cinci angajați, înregistrate în UE, în domenii precise (de ex. țesut, port popular, lemn, ceramică, bijuterii, instrumente muzicale). 5.000 euro sumă forfetară, fără cofinanțare, plus nouă luni de mentorat; implementare din ianuarie 2027.",
+        "en": "Professional craftspeople and craft micro-enterprises with up to five employees registered in the EU, in listed sectors (e.g. weaving, folk costume, woodwork, ceramics, jewellery, instrument making). EUR 5,000 lump sum with no co-financing, plus nine months of mentoring; implementation from January 2027."
+      }
+    },
+    {
+      "id": "ortaklasa-eu-turkiye-2026",
+      "status": "open",
+      "deadlines": [
+        "2026-12-18T16:00:00+02:00"
+      ],
+      "dateOnly": true,
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "intl",
+        "community"
+      ],
+      "url": "https://ortaklasa.iksv.org/en/call-for-cultural-collaboration/",
+      "title": {
+        "hu": "Ortaklaşa – EU–Törökország kulturális partnerség",
+        "ro": "Ortaklaşa – parteneriat cultural UE–Turcia",
+        "en": "Ortaklaşa – EU–Türkiye cultural partnership"
+      },
+      "funder": {
+        "hu": "İKSV, a Culture Action Europe partnerségével",
+        "ro": "İKSV, în parteneriat cu Culture Action Europe",
+        "en": "İKSV, in partnership with Culture Action Europe"
+      },
+      "who": {
+        "hu": "Négyes partnerség: egy törökországi és egy európai kulturális civil szervezet, valamint egy-egy önkormányzat mindkét oldalról. 60 000–120 000 euró, a költségvetés 70–95%-a; 9–12 hónapos projektek.",
+        "ro": "Parteneriat în patru: o organizație culturală din Turcia și una din Europa, plus câte o autoritate locală din fiecare parte. 60.000–120.000 euro, 70–95% din buget; proiecte de 9–12 luni.",
+        "en": "A four-way partnership: a cultural CSO from Türkiye and one from Europe, plus a municipality on each side. EUR 60,000–120,000, covering 70–95% of the budget; 9–12-month projects."
+      }
+    },
     {
       "id": "rmdsz-nok-mosolygo-karacsony-2026",
       "status": "open",
