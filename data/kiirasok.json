@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "note": "TIC pályázati naptár adatfájl. Az oldalon csak a status: open bejegyzések látszanak (deadlines kötelező); egy nyitott kiírás a határidő után 24 órával magától eltűnik. A status: expected bejegyzések belső figyelőlista: az oldalon nem jelennek meg, amikor a kiírás megnyílik, open-ra kell állítani és határidőt adni neki. langs: melyik nyelvi változatban jelenjen meg.",
   "tags": {
     "ro": {
@@ -99,6 +99,73 @@
     }
   },
   "calls": [
+    {
+      "id": "zmina-resilience-cocreation-2",
+      "status": "open",
+      "deadlines": [
+        "2026-12-04T23:59:00+02:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "intl",
+        "performing",
+        "community"
+      ],
+      "url": "https://zmina.eu/en/calls/zmina-resilience-cocreation-2",
+      "title": {
+        "hu": "ZMINA:Resilience – közös alkotás ukrán partnerrel, 2. kör",
+        "ro": "ZMINA:Resilience – co-creație cu un partener ucrainean, runda a 2-a",
+        "en": "ZMINA:Resilience – co-creation with a Ukrainian partner, round 2"
+      },
+      "funder": {
+        "hu": "ZMINA (IZOLYATSIA)",
+        "ro": "ZMINA (IZOLYATSIA)",
+        "en": "ZMINA (IZOLYATSIA)"
+      },
+      "who": {
+        "hu": "Legalább két kulturális szervezet két országból, egyikük ukrajnai; közösen létrehozott művészeti produkció a reziliencia témájában, bemutatóval minden partner helyszínén. Legfeljebb 25 000 euró, a költségek 90%-áig; az audiovizuális szektor kivételével minden terület. Megvalósítás 2027 február–augusztusában, angol nyelvű pályázat.",
+        "ro": "Cel puțin două organizații culturale din două țări, dintre care una din Ucraina; o producție artistică creată împreună pe tema rezilienței, cu prezentare publică la fiecare partener. Până la 25.000 euro, maximum 90% din costuri; toate domeniile, cu excepția audiovizualului. Implementare februarie–august 2027, aplicație în engleză.",
+        "en": "At least two cultural organisations from two countries, one of them in Ukraine; a jointly created artistic production on resilience, presented publicly at every partner's location. Up to EUR 25,000, covering up to 90% of costs; all sectors except audiovisual. Implementation February–August 2027; applications in English."
+      }
+    },
+    {
+      "id": "ehd-stories-2027",
+      "status": "open",
+      "deadlines": [
+        "2026-12-11T23:59:00+02:00"
+      ],
+      "dateOnly": true,
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "heritage",
+        "community"
+      ],
+      "url": "https://www.europeanheritagedays.com/Call-European-Heritage-Days-Stories-2027-TC",
+      "title": {
+        "hu": "European Heritage Days Stories 2027",
+        "ro": "European Heritage Days Stories 2027",
+        "en": "European Heritage Days Stories 2027"
+      },
+      "funder": {
+        "hu": "Európai Örökség Napjai (Európa Tanács és Európai Unió)",
+        "ro": "Zilele Europene ale Patrimoniului (Consiliul Europei și Uniunea Europeană)",
+        "en": "European Heritage Days (Council of Europe and European Union)"
+      },
+      "who": {
+        "hu": "Jogi személyek (egyesületek, iskolák, önkormányzatok stb.), amelyek 2023. augusztus 15. és 2026. november 30. között legalább egy Európai Örökség Napjai-eseményt szerveztek, és 2027-ben is terveznek. Legfeljebb 10 000 euró közösségi projektre; 2027-es téma: rejtett örökség. Az első 120 jogosult pályázat kerül elbírálásra.",
+        "ro": "Persoane juridice (asociații, școli, autorități locale etc.) care au organizat cel puțin un eveniment al Zilelor Europene ale Patrimoniului între 15 august 2023 și 30 noiembrie 2026 și plănuiesc unul și în 2027. Până la 10.000 euro pentru un proiect comunitar; tema 2027: patrimoniul ascuns. Sunt evaluate primele 120 de cereri eligibile.",
+        "en": "Legal entities (associations, schools, local authorities etc.) that hosted at least one European Heritage Days event between 15 August 2023 and 30 November 2026 and plan one in 2027. Up to EUR 10,000 for a community project; 2027 theme: hidden heritage. Only the first 120 eligible requests are assessed."
+      }
+    },
     {
       "id": "bga-elektronikus-sajto-2026",
       "status": "open",
