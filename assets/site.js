@@ -74,6 +74,23 @@
       .catch(function(){ show("err", form.getAttribute("data-err")); })
       .then(function(){ btn.disabled = false; btn.textContent = label; });
   });
+  /* Látogatásszámlálás a saját tárhelyen (stats/collect.php): süti és IP-tárolás nélkül.
+     A tulajdonos böngészőjét az összesítő oldal megjelöli (tic-nostat), az nem számít bele. */
+  function countVisit(){
+    try {
+      if (localStorage.getItem("tic-nostat") === "1") return;
+    } catch (e) {}
+    if (!navigator.sendBeacon) return;
+    var ref = document.referrer || "";
+    try { if (ref && new URL(ref).host === location.host) ref = location.origin + "/"; } catch (e) { ref = ""; }
+    var body = JSON.stringify({
+      p: location.pathname + (location.search.indexOf("fbclid=") !== -1 ? "?fbclid=1" : ""),
+      r: ref,
+      l: document.documentElement.lang || "",
+      w: window.innerWidth || 0
+    });
+    try { navigator.sendBeacon("/stats/collect.php", new Blob([body], { type: "application/json" })); } catch (e) {}
+  }
   /* Egynyelvű oldalon (pl. blogcikk) nincs nyelvváltó blokk: ott a lap saját nyelve marad. */
   if (document.querySelector("[data-lang]")) {
     var fromUrl = null, saved = null;
@@ -81,4 +98,5 @@
     try { saved = localStorage.getItem("tic-lang"); } catch (e) {}
     setLang(fromUrl || saved || DEFAULT_LANG);
   }
+  countVisit();
 })();

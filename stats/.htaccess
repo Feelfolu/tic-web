@@ -1,0 +1,8 @@
+# TIC látogatásszámláló – csak az index.php és a collect.php érhető el kívülről
+Options -Indexes
+<Files "lib.php">
+  Require all denied
+</Files>
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

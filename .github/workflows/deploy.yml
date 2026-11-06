@@ -39,7 +39,7 @@ jobs:
 
       - name: Csomagolás
         run: |
-          zip -r -X site.zip index.html calendar.html blog.html blog assets data
+          zip -r -X site.zip index.html calendar.html blog.html blog assets data stats
           unzip -l site.zip | tail -1
 
       - name: Feltöltés és kicsomagolás
