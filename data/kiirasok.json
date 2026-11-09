@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-09",
   "note": "TIC pályázati naptár adatfájl. Az oldalon csak a status: open bejegyzések látszanak (deadlines kötelező); egy nyitott kiírás a határidő után 24 órával magától eltűnik. A status: expected bejegyzések belső figyelőlista: az oldalon nem jelennek meg, amikor a kiírás megnyílik, open-ra kell állítani és határidőt adni neki. langs: melyik nyelvi változatban jelenjen meg.",
   "tags": {
     "ro": {
@@ -546,6 +546,68 @@
         "hu": "Nonprofit szervezetek és intézmények legalább kéttagú konzorciumban, az európai történelem és az emlékezetkultúra témáiban. 50 000–500 000 euró.",
         "ro": "Organizații nonprofit și instituții, în consorțiu de cel puțin doi parteneri, pe teme de istorie europeană și cultura memoriei. 50.000–500.000 euro.",
         "en": "Non-profit organisations and institutions in a consortium of at least two, on European history and remembrance. EUR 50,000–500,000."
+      }
+    },
+    {
+      "id": "culture-moves-europe-residency-hosts-2027",
+      "status": "open",
+      "deadlines": [
+        "2027-01-18T23:59:00+01:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "mobility",
+        "intl"
+      ],
+      "url": "https://www.goethe.de/ins/be/de/kul_alt/eur/cme.html",
+      "title": {
+        "hu": "Culture Moves Europe – rezidenciaprogramok befogadóinak, 2026–2027",
+        "ro": "Culture Moves Europe – apel pentru gazde de rezidențe, 2026–2027",
+        "en": "Culture Moves Europe – call for residency hosts 2026–2027"
+      },
+      "funder": {
+        "hu": "Európai Unió, Kreatív Európa (Goethe-Institut)",
+        "ro": "Uniunea Europeană, Europa Creativă (Goethe-Institut)",
+        "en": "European Union, Creative Europe (Goethe-Institut)"
+      },
+      "who": {
+        "hu": "Kreatív Európa-országban bejegyzett szervezetek, intézmények, önkormányzatok, egyéni vállalkozók, amelyek 1–5 külföldi művészt vagy kulturális szakembert fogadnak 21–90 napos rezidenciára. Legfeljebb 55 000 euró (akadálymentesítéssel 60 000); a rezidenciák 2027 áprilisa és 2028 márciusa között zajlanak.",
+        "ro": "Organizații, instituții, autorități publice și persoane fizice autorizate dintr-o țară participantă la Europa Creativă, care găzduiesc 1–5 artiști sau profesioniști din cultură din alte țări, pentru rezidențe de 21–90 de zile. Până la 55.000 euro (60.000 cu sprijin pentru accesibilitate); rezidențele au loc între aprilie 2027 și martie 2028.",
+        "en": "Organisations, public bodies and self-employed hosts in a Creative Europe country welcoming 1–5 artists or cultural professionals from other countries for 21–90-day residencies. Up to EUR 55,000 (EUR 60,000 with accessibility support); residencies run April 2027 – March 2028."
+      }
+    },
+    {
+      "id": "timisoara-nevoi-culturale-urgenta-2026",
+      "status": "open",
+      "deadlines": [
+        "2026-11-21T23:59:00+02:00"
+      ],
+      "dateOnly": true,
+      "langs": [
+        "ro",
+        "hu"
+      ],
+      "tags": [
+        "local",
+        "community"
+      ],
+      "url": "https://centruldeproiecte.ro/stiri/fondul-pentru-nevoi-culturale-de-urgenta-apel-deschis-pentru-proiecte-culturale-in-timisoara/",
+      "title": {
+        "hu": "Temesvár – sürgős kulturális szükségletek alapja 2026",
+        "ro": "Fondul pentru nevoi culturale de urgență 2026 – Timișoara"
+      },
+      "funder": {
+        "hu": "Temesvári Projektközpont (Centrul de Proiecte)",
+        "ro": "Centrul de Proiecte al Municipiului Timișoara"
+      },
+      "who": {
+        "hu": "Szervezetek, intézmények, vállalkozások és engedélyes magánszemélyek (PFA) rövid határidős, helyi hatású kulturális beavatkozásokra Temesváron, legalább egy partnerrel. Legfeljebb 50 000, nagy projektnél 75 000 lej, 5% önrész; folyamatos beadás, amíg a keret tart.",
+        "ro": "Persoane juridice, întreprinderi și PFA, pentru intervenții culturale urgente, cu impact local direct în Timișoara, cu cel puțin un partener. Până la 50.000 lei (proiecte mici) sau 75.000 lei (proiecte mari), cofinanțare minimă 5%; depunere continuă, în limita bugetului."
       }
     },
     {
