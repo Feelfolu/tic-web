@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "note": "TIC pályázati naptár adatfájl. Az oldalon csak a status: open bejegyzések látszanak (deadlines kötelező); egy nyitott kiírás a határidő után 24 órával magától eltűnik. A status: expected bejegyzések belső figyelőlista: az oldalon nem jelennek meg, amikor a kiírás megnyílik, open-ra kell állítani és határidőt adni neki. langs: melyik nyelvi változatban jelenjen meg.",
   "tags": {
     "ro": {
@@ -96,9 +96,50 @@
       "hu": "Sajtó, média",
       "ro": "Presă, media",
       "en": "Media"
+    },
+    "research": {
+      "hu": "Kutatás",
+      "ro": "Cercetare",
+      "en": "Research"
     }
   },
   "calls": [
+    {
+      "id": "rch-joint-call-2027",
+      "status": "open",
+      "deadlines": [
+        "2027-01-10T23:59:00+02:00",
+        "2027-06-15T23:59:00+03:00"
+      ],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "eu",
+        "heritage",
+        "research",
+        "intl"
+      ],
+      "url": "https://www.heritageresearch-hub.eu/european-partnership-for-resilient-cultural-heritage/joint-transational-calls/",
+      "title": {
+        "hu": "RCH – klímaálló kulturális örökség, első közös kutatási kiírás",
+        "ro": "RCH – Bazele pentru patrimoniu cultural rezilient la climă, primul apel comun",
+        "en": "RCH – Foundations for climate-resilient cultural heritage, first joint call"
+      },
+      "funder": {
+        "hu": "European Partnership for Resilient Cultural Heritage (Horizon Europe), román részvétellel",
+        "ro": "Parteneriatul European pentru Patrimoniu Cultural Rezilient (Horizon Europe), cu participarea României",
+        "en": "European Partnership for Resilient Cultural Heritage (Horizon Europe), Romania participating"
+      },
+      "who": {
+        "hu": "Legalább három jogi személyből álló, legalább három részt vevő országot átfogó nemzetközi konzorciumok kutatási projektjei: kockázat- és hatásértékelés, a klímaváltozás okozta károk és veszteségek kezelése, a hagyományos és helyi tudás mint a reziliencia forrása, fenntartható örökségirányítás. Kétfordulós: előpályázat 2027. január 11., 0:00-ig, teljes pályázat június 16., 0:00-ig (közép-európai idő). A részt vevő országok nemzeti finanszírozóinak saját szabályai is érvényesek.",
+        "ro": "Proiecte de cercetare ale unor consorții internaționale de cel puțin trei entități juridice din cel puțin trei țări participante: evaluarea riscului și impactului, gestionarea pierderilor și deteriorării cauzate de schimbările climatice, cunoașterea tradițională și locală ca resursă de reziliență, guvernanța sustenabilă a patrimoniului. În două etape: propunere preliminară până la 11 ianuarie 2027, ora 0:00, propunere completă până la 16 iunie, ora 0:00 (ora Europei Centrale). Se aplică și regulile finanțatorilor naționali.",
+        "en": "Research projects by international consortia of at least three legal entities from at least three participating countries: risk and impact assessment, managing climate-driven damage and loss, traditional and local knowledge as a resource for resilience, sustainable heritage governance. Two stages: pre-proposals by 11 January 2027, 00:00 CET; full proposals by 16 June 2027, 00:00 CEST. National funders' own rules also apply."
+      },
+      "dateOnly": true
+    },
     {
       "id": "zmina-resilience-cocreation-2",
       "status": "open",

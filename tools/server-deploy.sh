@@ -12,7 +12,7 @@ WEBROOT="$HOME/public_html"
 STATE="$HOME/tic-deploy"
 LOCK="$STATE/.lock"
 # Ezeket másolja ki a repóból; minden más (contact.php, .htaccess, cgi-bin, .well-known) érintetlen marad.
-FILES="index.html calendar.html blog.html"
+FILES="index.html calendar.html blog.html"   # kötelező fájlok; a repó gyökerében lévő összes .html kimegy
 DIRS="blog assets data stats"
 
 mkdir -p "$STATE"
@@ -55,13 +55,14 @@ for f in $FILES data/kiirasok.json data/blog.json assets/site.js assets/site.css
   if [ ! -s "$TMP/$f" ]; then log "HIBA: hiányzik vagy üres: $f ($SHA)"; exit 1; fi
 done
 if command -v python3 >/dev/null 2>&1; then
-  if ! python3 -c "import json,sys; [json.load(open(p, encoding='utf-8')) for p in sys.argv[1:]]" "$TMP/data/kiirasok.json" "$TMP/data/blog.json"; then
+  if ! python3 -c "import json,sys; [json.load(open(p, encoding='utf-8')) for p in sys.argv[1:]]" "$TMP/data/kiirasok.json" "$TMP/data/blog.json" $(ls "$TMP"/data/esemenyek.json 2>/dev/null); then
     log "HIBA: hibás JSON ($SHA)"; exit 1
   fi
 fi
 
-for f in $FILES; do
-  cp -f "$TMP/$f" "$WEBROOT/$f.new" && mv -f "$WEBROOT/$f.new" "$WEBROOT/$f"
+for p in "$TMP"/*.html; do
+  f=$(basename "$p")
+  cp -f "$p" "$WEBROOT/$f.new" && mv -f "$WEBROOT/$f.new" "$WEBROOT/$f"
 done
 for d in $DIRS; do
   [ -d "$TMP/$d" ] || continue

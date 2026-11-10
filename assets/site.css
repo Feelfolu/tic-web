@@ -266,3 +266,18 @@ html{scroll-behavior:smooth}
 .post-figure{margin:0 0 34px;max-width:880px}
 .post-figure img{width:100%;height:auto;border-radius:8px;display:block}
 @media (max-width:640px){.post-card.has-thumb{grid-template-columns:1fr}.post-card.has-thumb>*:not(.post-thumb){grid-column:1}.post-thumb{grid-row:auto}}
+/* ---------- v4: megosztás, események ---------- */
+.share{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px;padding-top:12px;border-top:1px dashed var(--line)}
+.share-btn{font:inherit;font-size:.8rem;line-height:1.3;padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:var(--cream);color:var(--ink);text-decoration:none;cursor:pointer;transition:border-color .15s,background .15s}
+.share-btn:hover{border-color:var(--brick)}
+.share-btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.share-btn.share-native{background:var(--brick);border-color:var(--brick);color:#fff}
+.share-btn.done{border-color:var(--gold);background:var(--paper-2)}
+.call.is-target{outline:3px solid var(--gold);outline-offset:4px}
+.btn-sm{padding:9px 16px;font-size:.9rem}
+.event-related{color:var(--brick);font-size:.9rem;font-weight:600;text-decoration:none;margin-left:10px;white-space:nowrap}
+.event-related:hover{text-decoration:underline;text-underline-offset:3px}
+.event .src{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.event .src .event-related{margin-left:0}
+@media (prefers-reduced-motion:reduce){.share-btn{transition:none}}
+.event .src .btn-main{color:#fff;text-decoration:none}

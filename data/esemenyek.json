@@ -1,0 +1,38 @@
+{
+  "updated": "2026-11-10",
+  "note": "TIC képzések és webináriumok adatfájl. start: ISO dátum (dateOnly: true, ha nincs pontos óra) vagy ISO időpont romániai időzónával; end: nem kötelező. Az esemény az utolsó napja végéig látszik, utána magától eltűnik. type: a types kulcsai közül. related: a data/kiirasok.json egy kiírásának id-je, ha az eseményhez kiírás tartozik. langs: melyik nyelvi változatban jelenjen meg.",
+  "types": {
+    "webinar":    {"hu": "Webinárium",       "ro": "Webinar",              "en": "Webinar"},
+    "training":   {"hu": "Képzés",           "ro": "Formare",              "en": "Training"},
+    "infoday":    {"hu": "Tájékoztató nap",  "ro": "Sesiune de informare", "en": "Info session"},
+    "conference": {"hu": "Konferencia",      "ro": "Conferință",           "en": "Conference"},
+    "workshop":   {"hu": "Műhely",           "ro": "Atelier",              "en": "Workshop"}
+  },
+  "events": [
+    {
+      "id": "rch-webinar-2026-11-17",
+      "type": "webinar",
+      "start": "2026-11-17",
+      "dateOnly": true,
+      "online": true,
+      "langs": ["ro", "hu", "en"],
+      "related": "rch-joint-call-2027",
+      "url": "https://forms.cloud.microsoft/r/Jv8CtcYz58",
+      "title": {
+        "hu": "Tájékoztató webinárium az RCH első közös kiírásáról",
+        "ro": "Webinar de informare despre primul apel comun RCH",
+        "en": "Info webinar on the first RCH joint call"
+      },
+      "organizer": {
+        "hu": "European Partnership for Resilient Cultural Heritage (RCH)",
+        "ro": "European Partnership for Resilient Cultural Heritage (RCH)",
+        "en": "European Partnership for Resilient Cultural Heritage (RCH)"
+      },
+      "desc": {
+        "hu": "A klímaálló kulturális örökségről szóló első közös kutatási kiírás bemutatása: témák, a konzorciumokra vonatkozó szabályok, a kétfordulós beadás. Angol nyelvű, regisztrációhoz kötött. A pontos időpontot a regisztrációs oldal adja meg.",
+        "ro": "Prezentarea primului apel comun de cercetare privind patrimoniul cultural rezilient la climă: teme, reguli pentru consorții, depunerea în două etape. În limba engleză, cu înregistrare prealabilă. Ora exactă este indicată pe pagina de înregistrare.",
+        "en": "An introduction to the first joint research call on climate-resilient cultural heritage: topics, consortium rules and the two-stage submission. In English; registration required. The exact time is given on the registration page."
+      }
+    }
+  ]
+}

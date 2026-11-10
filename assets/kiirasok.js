@@ -140,13 +140,22 @@
     }).join("");
     var host = "";
     if (c.url) { try { host = new URL(c.url).hostname.replace(/^www\./, ""); } catch (e) { host = c.url; } }
-    return '<article class="call">' + pill +
+    var share = "";
+    if (window.TICShare) {
+      share = window.TICShare.bar({
+        url: window.TICShare.SITE + "/calendar.html?lang=" + lang + "#k-" + c.id,
+        title: pick(c.title, lang) + " – " + (st.kind === "expected" ? pick(c.when, lang) : t.deadline + ": " + fmtDeadline(c, st, t)),
+        lang: lang
+      });
+    }
+    return '<article class="call" data-anchor="k-' + esc(c.id) + '">' + pill +
       "<h3>" + esc(pick(c.title, lang)) + "</h3>" +
       '<p class="meta">' + esc(pick(c.funder, lang)) + "</p>" +
       (pick(c.who, lang) ? '<p class="who-txt">' + esc(pick(c.who, lang)) + "</p>" : "") +
       when +
       (tags ? '<p class="tags">' + tags + "</p>" : "") +
       (c.url ? '<p class="src"><a href="' + esc(c.url) + '" target="_blank" rel="noopener">' + esc(t.source) + ": " + esc(host) + "</a></p>" : "") +
+      share +
       "</article>";
   }
 
@@ -225,6 +234,7 @@
         draw();
       });
       draw();
+      if (window.TICShare) window.TICShare.focusHash();
     }).catch(function () {
       root.innerHTML = '<p class="calls-empty">' + esc(t.loadErr) + "</p>";
     });

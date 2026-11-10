@@ -19,12 +19,12 @@ jobs:
         with:
           python-version: "3.12"
       - name: Adatfájlok
-        run: python3 -c "import json; [json.load(open(f, encoding='utf-8')) for f in ('data/kiirasok.json', 'data/blog.json')]"
+        run: python3 -c "import json; [json.load(open(f, encoding='utf-8')) for f in ('data/kiirasok.json', 'data/blog.json', 'data/esemenyek.json')]"
       - name: A blog le van generálva
         run: |
           pip install --quiet markdown
           python3 tools/build_blog.py .
-          git diff --stat --exit-code -- blog.html blog index.html calendar.html data/blog.json \
+          git diff --stat --exit-code -- blog.html blog index.html calendar.html events.html data/blog.json \
             || { echo "::error::A blog nincs újragenerálva: futtasd a tools/build_blog.py-t és commitold az eredményt"; exit 1; }
       - name: Frissítő szkript szintaxisa
         run: bash -n tools/server-deploy.sh

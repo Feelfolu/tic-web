@@ -58,7 +58,7 @@ $fmtDay = function (string $k): string {
     return $m[(int) substr($k, 5, 2) - 1] . ' ' . (int) substr($k, 8, 2) . '.';
 };
 $pageNames = [
-    '/' => 'Főoldal', '/calendar.html' => 'Pályázati naptár', '/blog.html' => 'Blog (lista)',
+    '/' => 'Főoldal', '/calendar.html' => 'Pályázati naptár', '/events.html' => 'Képzések, webináriumok', '/blog.html' => 'Blog (lista)',
 ];
 $langNames = ['hu' => 'Magyar', 'ro' => 'Román', 'en' => 'Angol', '?' => 'Ismeretlen'];
 

@@ -42,7 +42,7 @@ UI = {
     "hu": dict(
         nav_aria="Fő navigáció", home="kezdőlap", menu="Menü", lang_aria="Nyelvválasztás",
         nav=[("index.html#szolgaltatasok", "Szolgáltatások"), ("index.html#sajat-projektek", "Saját projektek"),
-             ("calendar.html", "Pályázati naptár"), ("blog.html", "Blog"), ("index.html#rolunk", "Rólunk"),
+             ("calendar.html", "Pályázati naptár"), ("events.html", "Képzések"), ("blog.html", "Blog"), ("index.html#rolunk", "Rólunk"),
              ("index.html#kapcsolat", "Kapcsolat")],
         list_eyebrow="Blog", list_h1="Írások pályázatokról és kulturális projektekről",
         list_intro="Tapasztalatok, tanácsok és gondolatok a kulturális pályázatok és projektek világából.",
@@ -55,7 +55,7 @@ UI = {
     "ro": dict(
         nav_aria="Navigare principală", home="pagina principală", menu="Meniu", lang_aria="Alegerea limbii",
         nav=[("index.html#servicii", "Servicii"), ("index.html#proiecte-proprii", "Proiecte proprii"),
-             ("calendar.html", "Calendar"), ("blog.html", "Blog"), ("index.html#despre", "Despre"),
+             ("calendar.html", "Calendar"), ("events.html", "Formări"), ("blog.html", "Blog"), ("index.html#despre", "Despre"),
              ("index.html#contact", "Contact")],
         list_eyebrow="Blog", list_h1="Articole despre finanțări și proiecte culturale",
         list_intro="Experiențe, sfaturi și reflecții din lumea finanțărilor și a proiectelor culturale.",
@@ -68,7 +68,7 @@ UI = {
     "en": dict(
         nav_aria="Main navigation", home="home", menu="Menu", lang_aria="Language",
         nav=[("index.html#services", "Services"), ("index.html#own-projects", "Own projects"),
-             ("calendar.html", "Funding calendar"), ("blog.html", "Blog"), ("index.html#about", "About"),
+             ("calendar.html", "Funding calendar"), ("events.html", "Training"), ("blog.html", "Blog"), ("index.html#about", "About"),
              ("index.html#contact-en", "Contact")],
         list_eyebrow="Blog", list_h1="Notes on cultural funding and projects",
         list_intro="Experience, advice and reflections from the world of cultural grants and projects.",
@@ -289,7 +289,7 @@ def build_post(p):
 
 def toggle_nav(has_posts):
     """A data-blog-nav menüpontok elrejtése, amíg nincs megjelent cikk."""
-    for name in ("index.html", "calendar.html"):
+    for name in ("index.html", "calendar.html", "events.html"):
         path = os.path.join(ROOT, name)
         s = open(path, encoding="utf-8").read()
         n = len(re.findall(r'<a href="blog\.html" data-blog-nav[^>]*>', s))
