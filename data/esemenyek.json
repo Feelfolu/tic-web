@@ -1,21 +1,45 @@
 {
-  "updated": "2026-11-10",
-  "note": "TIC képzések és webináriumok adatfájl. start: ISO dátum (dateOnly: true, ha nincs pontos óra) vagy ISO időpont romániai időzónával; end: nem kötelező. Az esemény az utolsó napja végéig látszik, utána magától eltűnik. type: a types kulcsai közül. related: a data/kiirasok.json egy kiírásának id-je, ha az eseményhez kiírás tartozik. langs: melyik nyelvi változatban jelenjen meg.",
+  "updated": "2026-11-11",
+  "note": "Szakmai események; az esemény befejezése után 48 órával nyilvános elrejtés. registrationDeadline és registrationStatus szabályozza a jelentkezés állapotát. dateOnly esetén a helyi nap végét használjuk technikai határként.",
   "types": {
-    "webinar":    {"hu": "Webinárium",       "ro": "Webinar",              "en": "Webinar"},
-    "training":   {"hu": "Képzés",           "ro": "Formare",              "en": "Training"},
-    "infoday":    {"hu": "Tájékoztató nap",  "ro": "Sesiune de informare", "en": "Info session"},
-    "conference": {"hu": "Konferencia",      "ro": "Conferință",           "en": "Conference"},
-    "workshop":   {"hu": "Műhely",           "ro": "Atelier",              "en": "Workshop"}
+    "webinar": {
+      "hu": "Webinárium",
+      "ro": "Webinar",
+      "en": "Webinar"
+    },
+    "training": {
+      "hu": "Képzés",
+      "ro": "Formare",
+      "en": "Training"
+    },
+    "infoday": {
+      "hu": "Tájékoztató nap",
+      "ro": "Sesiune de informare",
+      "en": "Info session"
+    },
+    "conference": {
+      "hu": "Konferencia",
+      "ro": "Conferință",
+      "en": "Conference"
+    },
+    "workshop": {
+      "hu": "Műhely",
+      "ro": "Atelier",
+      "en": "Workshop"
+    }
   },
   "events": [
     {
       "id": "rch-webinar-2026-11-17",
       "type": "webinar",
-      "start": "2026-11-17",
-      "dateOnly": true,
+      "start": "2026-11-17T14:00:00+01:00",
+      "dateOnly": false,
       "online": true,
-      "langs": ["ro", "hu", "en"],
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
       "related": "rch-joint-call-2027",
       "url": "https://forms.cloud.microsoft/r/Jv8CtcYz58",
       "title": {
@@ -29,10 +53,53 @@
         "en": "European Partnership for Resilient Cultural Heritage (RCH)"
       },
       "desc": {
-        "hu": "A klímaálló kulturális örökségről szóló első közös kutatási kiírás bemutatása: témák, a konzorciumokra vonatkozó szabályok, a kétfordulós beadás. Angol nyelvű, regisztrációhoz kötött. A pontos időpontot a regisztrációs oldal adja meg.",
-        "ro": "Prezentarea primului apel comun de cercetare privind patrimoniul cultural rezilient la climă: teme, reguli pentru consorții, depunerea în două etape. În limba engleză, cu înregistrare prealabilă. Ora exactă este indicată pe pagina de înregistrare.",
-        "en": "An introduction to the first joint research call on climate-resilient cultural heritage: topics, consortium rules and the two-stage submission. In English; registration required. The exact time is given on the registration page."
-      }
+        "hu": "Angol nyelvű online tájékoztató a kulturális örökség és klímaváltozás kutatási kiírásáról, kulturális szervezetek és kutatók számára. Időpont: 15:00–17:00 romániai idő szerint. Előzetes regisztráció szükséges; külön regisztrációs határidőt és részvételi díjat a vizsgált szervezői közlemény nem közöl.",
+        "ro": "Sesiune online în engleză despre apelul de cercetare privind patrimoniul și schimbările climatice, pentru organizații culturale și cercetători. Ora: 15:00–17:00 în România. Înregistrare prealabilă; anunțul verificat nu indică un termen separat de înscriere sau o taxă.",
+        "en": "English-language online information session for cultural organisations and researchers on the heritage and climate research call. 15:00–17:00 Romanian time. Advance registration required; the reviewed organiser announcement specifies no separate registration deadline or participation fee."
+      },
+      "end": "2026-11-17T16:00:00+01:00",
+      "language": "en",
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://www.heritageresearch-hub.eu/pre-announcement-jtc1-rch/",
+        "https://www.heritageresearch-hub.eu/rch-launches-its-first-joint-transnational-call/"
+      ]
+    },
+    {
+      "id": "crea-lit-infoday-2026-11-17",
+      "type": "infoday",
+      "start": "2026-11-17T14:00:00+01:00",
+      "end": "2026-11-17T16:00:00+01:00",
+      "dateOnly": false,
+      "online": true,
+      "langs": [
+        "hu",
+        "ro",
+        "en"
+      ],
+      "related": "crea-cult-2027-lit",
+      "language": "en",
+      "registrationRequired": false,
+      "url": "https://www.eacea.ec.europa.eu/news-events/events/online-info-session-circulation-european-literary-works-call-proposals-2027-2026-11-17_en",
+      "lastVerifiedAt": "2026-11-11T16:38:51+00:00",
+      "title": {
+        "hu": "Kreatív Európa 2027 – irodalmi művek európai forgalma: tájékoztató",
+        "ro": "Europa Creativă 2027 – circulația operelor literare: sesiune de informare",
+        "en": "Creative Europe 2027 – Circulation of European Literary Works info session"
+      },
+      "organizer": {
+        "hu": "EACEA",
+        "ro": "EACEA",
+        "en": "EACEA"
+      },
+      "desc": {
+        "hu": "Angol nyelvű online tájékoztató kiadóknak és könyvszakmai szervezeteknek: pályázás, jogosultság és támogatható projektek. Romániai idő szerint 15:00–17:00. Minden érdeklődő számára nyitott, előzetes regisztráció nem szükséges. Részvételi díjat nem jeleznek; felvétel nem készül.",
+        "ro": "Sesiune online în engleză pentru edituri și organizații din sectorul cărții: depunere, eligibilitate și proiecte finanțabile. Ora României: 15:00–17:00. Acces deschis tuturor, fără înregistrare prealabilă. Nu este indicată o taxă; nu se realizează înregistrare video.",
+        "en": "English-language online session for publishers and book-sector organisations on applications, eligibility and fundable projects. 15:00–17:00 Romanian time. Open to everyone; no advance registration required. No fee is indicated; the session will not be recorded."
+      },
+      "verificationSources": [
+        "https://www.eacea.ec.europa.eu/news-events/events/online-info-session-circulation-european-literary-works-call-proposals-2027-2026-11-17_en"
+      ]
     }
   ]
 }

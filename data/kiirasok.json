@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-10",
-  "note": "TIC pályázati naptár adatfájl. Az oldalon csak a status: open bejegyzések látszanak (deadlines kötelező); egy nyitott kiírás a határidő után 24 órával magától eltűnik. A status: expected bejegyzések belső figyelőlista: az oldalon nem jelennek meg, amikor a kiírás megnyílik, open-ra kell állítani és határidőt adni neki. langs: melyik nyelvi változatban jelenjen meg.",
+  "updated": "2026-11-11",
+  "note": "Szervezeti kulturális pályázatok. Nyilvános: publication=verified, vagy korábbi nyitott bejegyzés. Várható tételhez openingConfirmed és opensAt kötelező. A dátum nélküli ismétlődés belső review. Elrejtés: határidő +48 óra, archivált adat megtartásával. stages: meghívásos későbbi szakaszok, nem új jelentkezési határidők. Dátum-only értékeknél a helyi nap vége technikai határ, nem hivatalos óra-perc.",
   "tags": {
     "ro": {
       "hu": "Romániai forrás",
@@ -108,8 +108,7 @@
       "id": "rch-joint-call-2027",
       "status": "open",
       "deadlines": [
-        "2027-01-10T23:59:00+02:00",
-        "2027-06-15T23:59:00+03:00"
+        "2027-01-11T14:00:00+01:00"
       ],
       "langs": [
         "ro",
@@ -122,7 +121,7 @@
         "research",
         "intl"
       ],
-      "url": "https://www.heritageresearch-hub.eu/european-partnership-for-resilient-cultural-heritage/joint-transational-calls/",
+      "url": "https://www.heritageresearch-hub.eu/call/rch-2027-call/",
       "title": {
         "hu": "RCH – klímaálló kulturális örökség, első közös kutatási kiírás",
         "ro": "RCH – Bazele pentru patrimoniu cultural rezilient la climă, primul apel comun",
@@ -134,11 +133,25 @@
         "en": "European Partnership for Resilient Cultural Heritage (Horizon Europe), Romania participating"
       },
       "who": {
-        "hu": "Legalább három jogi személyből álló, legalább három részt vevő országot átfogó nemzetközi konzorciumok kutatási projektjei: kockázat- és hatásértékelés, a klímaváltozás okozta károk és veszteségek kezelése, a hagyományos és helyi tudás mint a reziliencia forrása, fenntartható örökségirányítás. Kétfordulós: előpályázat 2027. január 11., 0:00-ig, teljes pályázat június 16., 0:00-ig (közép-európai idő). A részt vevő országok nemzeti finanszírozóinak saját szabályai is érvényesek.",
-        "ro": "Proiecte de cercetare ale unor consorții internaționale de cel puțin trei entități juridice din cel puțin trei țări participante: evaluarea riscului și impactului, gestionarea pierderilor și deteriorării cauzate de schimbările climatice, cunoașterea tradițională și locală ca resursă de reziliență, guvernanța sustenabilă a patrimoniului. În două etape: propunere preliminară până la 11 ianuarie 2027, ora 0:00, propunere completă până la 16 iunie, ora 0:00 (ora Europei Centrale). Se aplică și regulile finanțatorilor naționali.",
-        "en": "Research projects by international consortia of at least three legal entities from at least three participating countries: risk and impact assessment, managing climate-driven damage and loss, traditional and local knowledge as a resource for resilience, sustainable heritage governance. Two stages: pre-proposals by 11 January 2027, 00:00 CET; full proposals by 16 June 2027, 00:00 CEST. National funders' own rules also apply."
+        "hu": "Kulturális örökség és klímaváltozás kutatása legalább három ország három jogosult szervezetének konzorciumában. Romániai szervezet koordinátorként vagy partnerként a román nemzeti feltételek szerint vehet részt. Előpályázat: 2027. január 11., 15:00 romániai idő szerint. A 2027. június 16-i, 15:00-kor záruló második szakasz kizárólag meghívottaknak szól. Román finanszírozásra közintézmények jogosultak: örökségi/klímakutató szervezetek, közmúzeumok, örökségkezelők; civil egyesületek nem automatikusan jogosultak. Román partnerenként 150 000–300 000 euró, 24 hónap.",
+        "ro": "Cercetare privind patrimoniul cultural și schimbările climatice, în consorții cu minimum trei organizații eligibile din trei țări. Organizațiile din România pot participa ca lider sau partener conform regulilor naționale. Propuneri preliminare: 11 ianuarie 2027, ora 15:00 în România. Etapa a doua, cu termen la 16 iunie 2027, ora 15:00, este doar pentru cei invitați. Finanțarea națională este destinată organismelor publice: cercetare în patrimoniu/climă, muzee publice și administratori publici de patrimoniu; ONG-urile nu sunt automat eligibile. 150.000–300.000 EUR/partener român, 24 luni.",
+        "en": "Cultural heritage and climate research by consortia of at least three eligible organisations in three countries. Romanian organisations may coordinate or partner subject to national funding rules. Pre-proposals: 11 January 2027, 15:00 Romanian time. The second stage, closing 16 June 2027 at 15:00 Romanian time, is by invitation only. Romanian national funding is restricted to eligible public heritage/climate research bodies, public museums and public heritage owners/managers; NGOs are not automatically eligible. EUR 150,000–300,000 per Romanian partner, 24 months."
       },
-      "dateOnly": true
+      "dateOnly": false,
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://www.heritageresearch-hub.eu/call/rch-2027-call/",
+        "https://www.heritageresearch-hub.eu/app/uploads/2026/11/RCH-JTC-2027-Call-Text_final.pdf"
+      ],
+      "stages": [
+        {
+          "deadline": "2027-06-16T14:00:00+02:00",
+          "invitationOnly": true
+        }
+      ],
+      "opensAt": "2026-11-04",
+      "timeZone": "Europe/Paris",
+      "publication": "verified"
     },
     {
       "id": "zmina-resilience-cocreation-2",
@@ -171,15 +184,20 @@
         "hu": "Legalább két kulturális szervezet két országból, egyikük ukrajnai; közösen létrehozott művészeti produkció a reziliencia témájában, bemutatóval minden partner helyszínén. Legfeljebb 25 000 euró, a költségek 90%-áig; az audiovizuális szektor kivételével minden terület. Megvalósítás 2027 február–augusztusában, angol nyelvű pályázat.",
         "ro": "Cel puțin două organizații culturale din două țări, dintre care una din Ucraina; o producție artistică creată împreună pe tema rezilienței, cu prezentare publică la fiecare partener. Până la 25.000 euro, maximum 90% din costuri; toate domeniile, cu excepția audiovizualului. Implementare februarie–august 2027, aplicație în engleză.",
         "en": "At least two cultural organisations from two countries, one of them in Ukraine; a jointly created artistic production on resilience, presented publicly at every partner's location. Up to EUR 25,000, covering up to 90% of costs; all sectors except audiovisual. Implementation February–August 2027; applications in English."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://zmina.eu/en/calls/zmina-resilience-cocreation-2"
+      ],
+      "publication": "verified"
     },
     {
       "id": "ehd-stories-2027",
       "status": "open",
       "deadlines": [
-        "2026-12-11T23:59:00+02:00"
+        "2026-12-12T00:00:00+01:00"
       ],
-      "dateOnly": true,
+      "dateOnly": false,
       "langs": [
         "ro",
         "hu",
@@ -205,7 +223,12 @@
         "hu": "Jogi személyek (egyesületek, iskolák, önkormányzatok stb.), amelyek 2023. augusztus 15. és 2026. november 30. között legalább egy Európai Örökség Napjai-eseményt szerveztek, és 2027-ben is terveznek. Legfeljebb 10 000 euró közösségi projektre; 2027-es téma: rejtett örökség. Az első 120 jogosult pályázat kerül elbírálásra.",
         "ro": "Persoane juridice (asociații, școli, autorități locale etc.) care au organizat cel puțin un eveniment al Zilelor Europene ale Patrimoniului între 15 august 2023 și 30 noiembrie 2026 și plănuiesc unul și în 2027. Până la 10.000 euro pentru un proiect comunitar; tema 2027: patrimoniul ascuns. Sunt evaluate primele 120 de cereri eligibile.",
         "en": "Legal entities (associations, schools, local authorities etc.) that hosted at least one European Heritage Days event between 15 August 2023 and 30 November 2026 and plan one in 2027. Up to EUR 10,000 for a community project; 2027 theme: hidden heritage. Only the first 120 eligible requests are assessed."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://www.europeanheritagedays.com/Call-European-Heritage-Days-Stories-2027-TC"
+      ],
+      "publication": "verified"
     },
     {
       "id": "bga-elektronikus-sajto-2026",
@@ -229,7 +252,11 @@
       },
       "who": {
         "hu": "A Kárpát-medencében, Magyarország határain kívül működő, magyar nyelvű vagy magyarul is szerkesztett elektronikus sajtótermékek kiadói, működésre és tényfeltáró, terepmunkán alapuló tartalmakra. Beadás a NIR-rendszerben."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://bgazrt.hu/2026-evi-hataron-tuli-elektronikus-sajto-tamogatasa-cimu-palyazati-kiiras/"
+      ]
     },
     {
       "id": "culture-helps-solidarity-collab-2",
@@ -262,7 +289,12 @@
         "hu": "Legalább kéttagú partnerség, amelyben van ukrajnai jogi státuszú és Kreatív Európa-országbeli kulturális vagy civil szervezet; a menekült ukránok kulturális részvételét és befogadását segítő projektek. Legfeljebb 20 000 euró (két partner) vagy 30 000 euró (három vagy több partner).",
         "ro": "Parteneriate de cel puțin două organizații, cu un partener cu statut juridic în Ucraina și unul dintr-o țară Europa Creativă; proiecte culturale pentru participarea și integrarea ucrainenilor strămutați. Până la 20.000 euro (doi parteneri) sau 30.000 euro (trei sau mai mulți).",
         "en": "Partnerships of at least two organisations, including one with legal status in Ukraine and one in a Creative Europe country; cultural projects supporting the participation and integration of displaced Ukrainians. Up to EUR 20,000 (two partners) or EUR 30,000 (three or more)."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://insha-osvita.org/en/?p=3478"
+      ],
+      "publication": "verified"
     },
     {
       "id": "craft-tour-open-call",
@@ -295,13 +327,18 @@
         "hu": "Uniós tagállamban bejegyzett hivatásos kézművesek és legfeljebb ötfős kézműves vállalkozások, meghatározott ágazatokban (pl. szövés, viselet, faművesség, kerámia, ékszer, hangszerkészítés). 5000 euró átalánytámogatás önrész nélkül, kilenc hónap mentorálással; megvalósítás 2027 januárjától.",
         "ro": "Meșteșugari profesioniști și microîntreprinderi meșteșugărești de până la cinci angajați, înregistrate în UE, în domenii precise (de ex. țesut, port popular, lemn, ceramică, bijuterii, instrumente muzicale). 5.000 euro sumă forfetară, fără cofinanțare, plus nouă luni de mentorat; implementare din ianuarie 2027.",
         "en": "Professional craftspeople and craft micro-enterprises with up to five employees registered in the EU, in listed sectors (e.g. weaving, folk costume, woodwork, ceramics, jewellery, instrument making). EUR 5,000 lump sum with no co-financing, plus nine months of mentoring; implementation from January 2027."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://craft-tour.eu/open-call/"
+      ],
+      "publication": "verified"
     },
     {
       "id": "ortaklasa-eu-turkiye-2026",
       "status": "open",
       "deadlines": [
-        "2026-12-18T16:00:00+02:00"
+        "2026-12-18"
       ],
       "dateOnly": true,
       "langs": [
@@ -325,20 +362,28 @@
         "en": "İKSV, in partnership with Culture Action Europe"
       },
       "who": {
-        "hu": "Négyes partnerség: egy törökországi és egy európai kulturális civil szervezet, valamint egy-egy önkormányzat mindkét oldalról. 60 000–120 000 euró, a költségvetés 70–95%-a; 9–12 hónapos projektek.",
-        "ro": "Parteneriat în patru: o organizație culturală din Turcia și una din Europa, plus câte o autoritate locală din fiecare parte. 60.000–120.000 euro, 70–95% din buget; proiecte de 9–12 luni.",
-        "en": "A four-way partnership: a cultural CSO from Türkiye and one from Europe, plus a municipality on each side. EUR 60,000–120,000, covering 70–95% of the budget; 9–12-month projects."
-      }
+        "hu": "Romániai kulturális civil szervezetek partnerként vehetnek részt; a főpályázó törökországi kulturális civil szervezet. Szükséges egy törökországi és egy európai részt vevő önkormányzat is. Támogatás: 60 000–120 000 euró, a költségek 70–95%-a; 9–12 hónap. A hivatalos összefoglaló csak a zárónapot közli.",
+        "ro": "Organizațiile culturale din România pot participa ca parteneri; solicitantul principal este un ONG cultural din Türkiye. Participă și câte o municipalitate din Türkiye și din Europa. Grant: 60.000–120.000 EUR, 70–95% din costuri; 9–12 luni. Rezumatul oficial indică numai data-limită.",
+        "en": "Romanian cultural CSOs may participate as partners; the lead applicant must be a cultural CSO based in Türkiye. A participating municipality from Türkiye and one from Europe are also required. EUR 60,000–120,000, covering 70–95% of costs; 9–12 months. The official summary specifies a closing date only."
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://ortaklasa.iksv.org/en/call-for-cultural-collaboration/"
+      ],
+      "timeZone": "Europe/Istanbul",
+      "publication": "verified"
     },
     {
       "id": "rmdsz-nok-mosolygo-karacsony-2026",
       "status": "open",
       "deadlines": [
-        "2026-11-13T23:59:00+02:00"
+        "2026-11-13"
       ],
       "dateOnly": true,
       "langs": [
-        "hu"
+        "hu",
+        "ro",
+        "en"
       ],
       "tags": [
         "ro",
@@ -346,14 +391,26 @@
       ],
       "url": "https://nok.rmdsz.ro/palyazati-kiiras-mosolygo-karacsony-es-egyszulosok-karacsonya-2/",
       "title": {
-        "hu": "Mosolygó Karácsony és Egyszülősök Karácsonya"
+        "hu": "Mosolygó Karácsony és Egyszülősök Karácsonya",
+        "ro": "Crăciun cu zâmbete și Crăciun pentru familii monoparentale – Organizația de Femei UDMR",
+        "en": "Smiling Christmas and Christmas for single-parent families – UDMR Women’s Organisation"
       },
       "funder": {
-        "hu": "RMDSZ Nőszervezet"
+        "hu": "RMDSZ Nőszervezet",
+        "ro": "Organizația de Femei UDMR",
+        "en": "UDMR Women’s Organisation"
       },
       "who": {
-        "hu": "Bejegyzett civil szervezetek és alapítványok 2026. december 2–30. között megvalósuló adventi és karácsonyi közösségi programjaira: kézműves foglalkozások, jótékonysági akciók, közösségi estek; külön fókusz az egyszülős családokon. Vissza nem térítendő résztámogatás."
-      }
+        "hu": "Bejegyzett civil szervezetek és alapítványok 2026. december 2–30. között megvalósuló adventi és karácsonyi közösségi programjaira: kézműves foglalkozások, jótékonysági akciók, közösségi estek; külön fókusz az egyszülős családokon. Vissza nem térítendő résztámogatás.",
+        "ro": "ONG-uri și fundații înregistrate, pentru activități comunitare de Advent și Crăciun desfășurate între 2 și 30 decembrie 2026: ateliere de creație, seri comunitare și acțiuni caritabile. Accent pe familiile monoparentale. Sprijin parțial nerambursabil; maximum un proiect pe asociație, cu excepțiile din apel.",
+        "en": "Registered NGOs and foundations organising community Advent and Christmas activities on 2–30 December 2026: craft workshops, community evenings and charitable activities, with particular attention to single-parent families. Partial grant support; one project per association, subject to the exceptions in the call."
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://nok.rmdsz.ro/palyazati-kiiras-mosolygo-karacsony-es-egyszulosok-karacsonya-2/"
+      ],
+      "timeZone": "Europe/Bucharest",
+      "publication": "verified"
     },
     {
       "id": "transatlantic-stars-2027",
@@ -389,15 +446,21 @@
         "hu": "Pályaívük közepén járó, uniós állampolgárságú képzőművészek, filmrendezők és zenészek; 2027 tavaszán közös alkotómunka amerikai művészekkel. Jelentkezni 23:59-ig (közép-európai idő) lehet, vagy amíg be nem érkezik 350 pályázat.",
         "ro": "Artiști vizuali, regizori de film și muzicieni la mijlocul carierei, cetățeni ai UE; în primăvara lui 2027, creație comună cu artiști americani. Înscrierile se închid la 23:59 (ora Europei Centrale) sau la atingerea a 350 de candidaturi.",
         "en": "Mid-career visual artists, film directors and musicians who are EU citizens; joint work with American artists in spring 2027. Applications close at 23:59 CET or once 350 applications are received."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://www.eeas.europa.eu/delegations/united-states-america/transatlantic-rising-stars-project-0_en"
+      ],
+      "publication": "excluded",
+      "exclusionReason": "Kizárólag magánszemély pályázók; a szervezeti naptár hatókörén kívül."
     },
     {
       "id": "raiffeisen-comunitati-16",
       "status": "open",
       "deadlines": [
-        "2026-11-26T23:59:00+02:00"
+        "2026-11-26T17:00:00+02:00"
       ],
-      "dateOnly": true,
+      "dateOnly": false,
       "langs": [
         "ro",
         "hu",
@@ -408,7 +471,7 @@
         "private",
         "community"
       ],
-      "url": "https://raiffeisencomunitati.org",
+      "url": "https://www.raiffeisencomunitati.org/",
       "title": {
         "hu": "Raiffeisen Comunități – 16. kiadás",
         "ro": "Raiffeisen Comunități – ediția a 16-a",
@@ -420,10 +483,15 @@
         "en": "Raiffeisen Bank Romania"
       },
       "who": {
-        "hu": "Három nonprofit szervezetből vagy kezdeményező csoportból álló partnerség, romániai civil szervezet vezetésével. Partnerségenként legfeljebb 350 000 lej.",
-        "ro": "Parteneriate de trei entități nonprofit (ONG-uri sau grupuri de inițiativă), coordonate de un ONG din România. Până la 350.000 lei pe parteneriat.",
-        "en": "Partnerships of three non-profits or initiative groups, led by an NGO registered in Romania. Up to 350,000 lei per partnership."
-      }
+        "hu": "Romániai nonprofit szervezet vezette háromtagú partnerségek közösségi fejlesztési projektjeire. Kulturális közösségi projekt akkor illeszkedik, ha igazolt helyi szükségletre, részvételi folyamatra és helyi fejlesztési stratégiára épül; kulturális rendezvény önmagában nem elég. Támogatás 250 000–350 000 lej; 12–18 hónap.",
+        "ro": "Parteneriate de trei entități nonprofit, coordonate de un ONG din România. Un proiect cultural comunitar trebuie să răspundă unor nevoi identificate participativ și strategiei de dezvoltare locală; un eveniment cultural izolat nu este suficient. Grant: 250.000–350.000 lei; 12–18 luni.",
+        "en": "Partnerships of three nonprofit entities led by a Romanian NGO. A community cultural project must address needs identified through participation and align with local development strategy; a standalone cultural event is insufficient. RON 250,000–350,000; 12–18 months."
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://www.raiffeisencomunitati.org/static/Ghidul-Aplicantului-Editia16-BKPVhnsD.pdf"
+      ],
+      "publication": "verified"
     },
     {
       "id": "culture-moves-europe-mobility",
@@ -462,15 +530,21 @@
         "hu": "18 év feletti művészek és kulturális szakemberek, egyénileg vagy legfeljebb ötfős csoportban, külföldi szakmai utakra. Havi határidők 2027. április 30-ig.",
         "ro": "Artiști și profesioniști din cultură peste 18 ani, individual sau în grupuri de până la cinci persoane, pentru deplasări profesionale în străinătate. Termene lunare până la 30 aprilie 2027.",
         "en": "Artists and cultural professionals aged 18+, individually or in groups of up to five, for professional trips abroad. Monthly deadlines until 30 April 2027."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://culture.ec.europa.eu/culture-moves-europe/call-for-individual-mobility"
+      ],
+      "publication": "excluded",
+      "exclusionReason": "Kizárólag magánszemély pályázók; a szervezeti naptár hatókörén kívül."
     },
     {
       "id": "nka-kpf-kreativ-europa-onresz",
       "status": "open",
       "deadlines": [
-        "2026-12-07T23:59:00+02:00"
+        "2026-12-08T00:00:00+01:00"
       ],
-      "dateOnly": true,
+      "dateOnly": false,
       "langs": [
         "hu"
       ],
@@ -489,7 +563,12 @@
       },
       "who": {
         "hu": "Kreatív Európa együttműködési projektben vagy platformban nyertes magyarországi és határon túli magyar kulturális szervezetek, fő- vagy társszervezőként. Legfeljebb 40 000 euró, a vállalt önrész mértékéig."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/a-kozossegi-programok-es-fesztivalok-kollegiuma-nyilt-palyazati-felhivasa-4/"
+      ],
+      "publication": "verified"
     },
     {
       "id": "crea-cult-2027-lit",
@@ -522,11 +601,16 @@
         "hu": "Könyvkiadással foglalkozó szervezetek, egyedül vagy konzorciumban, legalább öt európai irodalmi mű fordítására, kiadására és népszerűsítésére. Legfeljebb 300 000 euró.",
         "ro": "Organizații din sectorul editorial, individual sau în consorțiu, pentru traducerea, publicarea și promovarea a cel puțin cinci opere literare europene. Până la 300.000 euro.",
         "en": "Publishing organisations, alone or in a consortium, translating, publishing and promoting at least five European literary works. Up to EUR 300,000."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:38:30+00:00",
+      "verificationSources": [
+        "https://culture.ec.europa.eu/whats-new/news/creative-europe-opens-2027-call-for-literary-translation-and-promotion"
+      ],
+      "publication": "verified"
     },
     {
       "id": "visegrad-grants-2027-02",
-      "status": "open",
+      "status": "expected",
       "deadlines": [
         "2027-02-01T12:00:00+01:00"
       ],
@@ -551,10 +635,23 @@
         "en": "International Visegrad Fund"
       },
       "who": {
-        "hu": "Civil szervezetek, önkormányzatok, intézmények legalább három V4-országbeli partnerrel; romániai szervezet további partnerként csatlakozhat.",
-        "ro": "ONG-uri, autorități locale și instituții, cu parteneri din cel puțin trei țări V4; organizațiile din România se pot alătura ca parteneri suplimentari.",
-        "en": "NGOs, local authorities and institutions with partners from at least three V4 countries; organisations from Romania can join as additional partners."
-      }
+        "hu": "Romániai jogi személyek pályázóként vagy partnerként, legalább három különböző V4-országbeli szervezet részvételével. Kulturális együttműködés és közös örökség, legfeljebb 18 hónap; akár 100%-os finanszírozás. A projektnek érdemi V4-regionális hatást kell elérnie.",
+        "ro": "Entități juridice din România pot fi solicitanți sau parteneri, cu minimum trei organizații din trei țări V4 diferite. Cooperare culturală și patrimoniu comun; maximum 18 luni, finanțare de până la 100%. Proiectul trebuie să genereze impact regional real în V4.",
+        "en": "Romanian legal entities may apply or partner, with at least three organisations from three different V4 countries. Cultural cooperation and shared heritage; up to 18 months and up to 100% funding. Projects must deliver meaningful regional impact in the V4."
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://www.visegradfund.org/visegrad-grants-apply"
+      ],
+      "opensAt": "2027-01-01T12:00:00+01:00",
+      "openingConfirmed": true,
+      "timeZone": "Europe/Bratislava",
+      "when": {
+        "hu": "Megnyitás: 2027. január 1., 13:00 romániai idő szerint.",
+        "ro": "Deschidere: 1 ianuarie 2027, ora 13:00 în România.",
+        "en": "Opens 1 January 2027, 13:00 Romanian time."
+      },
+      "publication": "verified"
     },
     {
       "id": "cerv-european-remembrance",
@@ -587,7 +684,12 @@
         "hu": "Nonprofit szervezetek és intézmények legalább kéttagú konzorciumban, az európai történelem és az emlékezetkultúra témáiban. 50 000–500 000 euró.",
         "ro": "Organizații nonprofit și instituții, în consorțiu de cel puțin doi parteneri, pe teme de istorie europeană și cultura memoriei. 50.000–500.000 euro.",
         "en": "Non-profit organisations and institutions in a consortium of at least two, on European history and remembrance. EUR 50,000–500,000."
-      }
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/wp-call/2026/call-fiche_cerv-2026-citizens-rem_en.pdf"
+      ],
+      "publication": "verified"
     },
     {
       "id": "culture-moves-europe-residency-hosts-2027",
@@ -605,7 +707,7 @@
         "mobility",
         "intl"
       ],
-      "url": "https://www.goethe.de/ins/be/de/kul_alt/eur/cme.html",
+      "url": "https://culture.ec.europa.eu/culture-moves-europe/call-for-residency-hosts",
       "title": {
         "hu": "Culture Moves Europe – rezidenciaprogramok befogadóinak, 2026–2027",
         "ro": "Culture Moves Europe – apel pentru gazde de rezidențe, 2026–2027",
@@ -617,21 +719,27 @@
         "en": "European Union, Creative Europe (Goethe-Institut)"
       },
       "who": {
-        "hu": "Kreatív Európa-országban bejegyzett szervezetek, intézmények, önkormányzatok, egyéni vállalkozók, amelyek 1–5 külföldi művészt vagy kulturális szakembert fogadnak 21–90 napos rezidenciára. Legfeljebb 55 000 euró (akadálymentesítéssel 60 000); a rezidenciák 2027 áprilisa és 2028 márciusa között zajlanak.",
-        "ro": "Organizații, instituții, autorități publice și persoane fizice autorizate dintr-o țară participantă la Europa Creativă, care găzduiesc 1–5 artiști sau profesioniști din cultură din alte țări, pentru rezidențe de 21–90 de zile. Până la 55.000 euro (60.000 cu sprijin pentru accesibilitate); rezidențele au loc între aprilie 2027 și martie 2028.",
-        "en": "Organisations, public bodies and self-employed hosts in a Creative Europe country welcoming 1–5 artists or cultural professionals from other countries for 21–90-day residencies. Up to EUR 55,000 (EUR 60,000 with accessibility support); residencies run April 2027 – March 2028."
-      }
+        "hu": "Romániában vagy más Kreatív Európa-országban bejegyzett, kulturális területen működő jogi személyek 1–5 külföldi művész vagy szakember fogadására, megfelelő szállással, munkatérrel és mentorral. A fogadó támogatása napi 50 euró résztvevőnként, további résztvevői és akadálymentesítési támogatásokkal. A második szakasz csak az első szakasz nyerteseinek szól.",
+        "ro": "Entități juridice culturale din România sau altă țară Europa Creativă, care pot găzdui 1–5 artiști sau profesioniști din alte țări, cu cazare, spațiu de lucru și mentor. Sprijin pentru gazdă: 50 EUR/zi/rezident, plus sprijin pentru rezidenți și accesibilitate. Etapa a doua este doar pentru cei selectați în prima etapă.",
+        "en": "Cultural legal entities based in Romania or another Creative Europe country, able to host 1–5 artists or professionals from other countries, with accommodation, workspace and a mentor. Host support: EUR 50/day/resident, plus resident and accessibility support. Phase 2 is restricted to successful phase 1 applicants."
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://culture.ec.europa.eu/culture-moves-europe/call-for-residency-hosts"
+      ],
+      "publication": "verified"
     },
     {
       "id": "timisoara-nevoi-culturale-urgenta-2026",
       "status": "open",
       "deadlines": [
-        "2026-11-21T23:59:00+02:00"
+        "2026-11-21"
       ],
       "dateOnly": true,
       "langs": [
+        "hu",
         "ro",
-        "hu"
+        "en"
       ],
       "tags": [
         "local",
@@ -640,16 +748,25 @@
       "url": "https://centruldeproiecte.ro/stiri/fondul-pentru-nevoi-culturale-de-urgenta-apel-deschis-pentru-proiecte-culturale-in-timisoara/",
       "title": {
         "hu": "Temesvár – sürgős kulturális szükségletek alapja 2026",
-        "ro": "Fondul pentru nevoi culturale de urgență 2026 – Timișoara"
+        "ro": "Fondul pentru nevoi culturale de urgență 2026 – Timișoara",
+        "en": "Timișoara – Emergency cultural needs fund"
       },
       "funder": {
         "hu": "Temesvári Projektközpont (Centrul de Proiecte)",
-        "ro": "Centrul de Proiecte al Municipiului Timișoara"
+        "ro": "Centrul de Proiecte al Municipiului Timișoara",
+        "en": "Timișoara Projects Centre"
       },
       "who": {
         "hu": "Szervezetek, intézmények, vállalkozások és engedélyes magánszemélyek (PFA) rövid határidős, helyi hatású kulturális beavatkozásokra Temesváron, legalább egy partnerrel. Legfeljebb 50 000, nagy projektnél 75 000 lej, 5% önrész; folyamatos beadás, amíg a keret tart.",
-        "ro": "Persoane juridice, întreprinderi și PFA, pentru intervenții culturale urgente, cu impact local direct în Timișoara, cu cel puțin un partener. Până la 50.000 lei (proiecte mici) sau 75.000 lei (proiecte mari), cofinanțare minimă 5%; depunere continuă, în limita bugetului."
-      }
+        "ro": "Persoane juridice, întreprinderi și PFA, pentru intervenții culturale urgente, cu impact local direct în Timișoara, cu cel puțin un partener. Până la 50.000 lei (proiecte mici) sau 75.000 lei (proiecte mari), cofinanțare minimă 5%; depunere continuă, în limita bugetului.",
+        "en": "Legal entities and authorised businesses may apply for cultural interventions in Timișoara. Public activities must take place in Timișoara and start within 30 days of requesting funding. Up to RON 50,000 for small projects (at least one partner), or RON 75,000 for large projects (at least two partners); complementary funding of at least 5% of the requested grant. Rolling submissions until funds are exhausted, no later than 21 November 2026."
+      },
+      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "verificationSources": [
+        "https://centruldeproiecte.ro/stiri/fondul-pentru-nevoi-culturale-de-urgenta-apel-deschis-pentru-proiecte-culturale-in-timisoara/"
+      ],
+      "timeZone": "Europe/Bucharest",
+      "publication": "verified"
     },
     {
       "id": "nea-kulhoni-2027",
@@ -674,7 +791,8 @@
       },
       "when": {
         "hu": "Kiírás várhatóan 2026 novemberében"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "erosodo-karpat-medence-2027",
@@ -700,7 +818,8 @@
       },
       "when": {
         "hu": "Határidő várhatóan 2026 november–decemberében"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "csoori-2027",
@@ -726,7 +845,8 @@
       },
       "when": {
         "hu": "Határidő várhatóan 2027. január közepén"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "erasmus-youth-2027",
@@ -762,7 +882,8 @@
         "hu": "Határidő várhatóan 2027 február–márciusában",
         "ro": "Termen estimat: februarie–martie 2027",
         "en": "Expected deadline: February–March 2027"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "erasmus-ka210-2027",
@@ -798,7 +919,8 @@
         "hu": "Határidő várhatóan 2027. március elején",
         "ro": "Termen estimat: începutul lunii martie 2027",
         "en": "Expected deadline: early March 2027"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "afcn-sesiunea-ii-2027",
@@ -815,7 +937,7 @@
         "performing",
         "folk"
       ],
-      "url": "https://www.afcn-proiecte.ro/",
+      "url": "https://www.afcn-proiecte.ro/apel-finantare.html",
       "title": {
         "hu": "AFCN – Sesiunea II/2027",
         "ro": "AFCN – Sesiunea II/2027",
@@ -827,15 +949,26 @@
         "en": "Romania's National Cultural Fund Administration"
       },
       "who": {
-        "hu": "Egyesületek, alapítványok, közintézmények, PFA-k; minden kulturális terület.",
-        "ro": "Asociații, fundații, instituții publice, PFA-uri; toate domeniile culturale.",
-        "en": "Associations, foundations, public institutions and sole traders; all cultural fields."
+        "hu": "Romániai kulturális szervezeteknek: tárgyi és szellemi örökség, kulturális nevelés, kulturális beavatkozás és írott kultúra. A megnyitást az AFCN bejelentette; a 2027-es részletes jogosultságot, támogatási keretet és beadási határidőt a megjelenő útmutató erősíti meg.",
+        "ro": "Pentru organizații culturale din România: patrimoniu material și imaterial, educație prin cultură, intervenție culturală și promovarea culturii scrise. Lansare anunțată de AFCN; condițiile detaliate, bugetul și termenul vor fi confirmate în ghidul sesiunii.",
+        "en": "For Romanian cultural organisations: tangible and intangible heritage, cultural education, cultural intervention and written culture. AFCN has announced the launch; detailed eligibility, funding and submission deadline remain subject to the forthcoming session guidelines."
       },
       "when": {
-        "hu": "Határidő várhatóan 2027 tavaszán (rendes ütem: március)",
-        "ro": "Termen estimat: primăvara 2027 (calendarul obișnuit: martie)",
-        "en": "Expected deadline: spring 2027 (usual cycle: March)"
-      }
+        "hu": "Hivatalosan bejelentett megnyitás: 2027. március 1.",
+        "ro": "Deschidere anunțată oficial: 1 martie 2027.",
+        "en": "Officially announced opening: 1 March 2027."
+      },
+      "publication": "verified",
+      "opensAt": "2027-03-01",
+      "openingConfirmed": true,
+      "deadlinePending": true,
+      "dateOnly": true,
+      "timeZone": "Europe/Bucharest",
+      "lastVerifiedAt": "2026-11-11T16:38:30+00:00",
+      "verificationSources": [
+        "https://agerpres.ro/documentare/2026/08/31/x--1589433",
+        "https://www.afcn.ro/finantari.html"
+      ]
     },
     {
       "id": "creative-europe-cooperation-2027",
@@ -872,7 +1005,8 @@
         "hu": "Kiírás 2027 első negyedévében",
         "ro": "Lansare în trimestrul I 2027",
         "en": "Call expected in Q1 2027"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "mol-hatartalan-nyar-2027",
@@ -897,7 +1031,8 @@
       },
       "when": {
         "hu": "Határidő várhatóan 2027 márciusában"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "communitas-2027",
@@ -924,7 +1059,8 @@
       },
       "when": {
         "hu": "Határidő várhatóan 2027 májusában"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "icr-cantemir-2027",
@@ -955,7 +1091,8 @@
       "when": {
         "ro": "Termen estimat: primăvara 2027",
         "en": "Expected deadline: spring 2027"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "consilii-judetene-2027",
@@ -984,7 +1121,8 @@
       "when": {
         "hu": "Határidők várhatóan 2027 április–júliusában, megyénként eltérően",
         "ro": "Termene estimate: aprilie–iulie 2027, diferit de la un județ la altul"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "municipii-2027",
@@ -1013,7 +1151,8 @@
       "when": {
         "hu": "Határidők várhatóan 2027 április–júliusában, egyes városokban ősszel",
         "ro": "Termene estimate: aprilie–iulie 2027, în unele orașe toamna"
-      }
+      },
+      "publication": "review"
     },
     {
       "id": "see-norvegia-cultura",
@@ -1047,7 +1186,8 @@
         "hu": "Figyelendő: kiírási dátum még nincs",
         "ro": "De urmărit: nu există încă dată de lansare",
         "en": "To watch: no launch date yet"
-      }
+      },
+      "publication": "review"
     }
   ]
 }

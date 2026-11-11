@@ -281,3 +281,5 @@ html{scroll-behavior:smooth}
 .event .src .event-related{margin-left:0}
 @media (prefers-reduced-motion:reduce){.share-btn{transition:none}}
 .event .src .btn-main{color:#fff;text-decoration:none}
+
+.cal-status{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--cream);color:var(--ink);max-width:100%}

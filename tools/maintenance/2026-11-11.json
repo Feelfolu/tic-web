@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-11",
+  "newCalls": 0,
+  "modifiedCallRecords": 30,
+  "newEvents": 1,
+  "modifiedEvents": 1,
+  "publishedExpected": [
+    "visegrad-grants-2027-02",
+    "afcn-sesiunea-ii-2027"
+  ],
+  "excludedIndividualOnly": [
+    "culture-moves-europe-mobility",
+    "transatlantic-stars-2027"
+  ],
+  "expiredHidden": [
+    "bga-elektronikus-sajto-2026"
+  ],
+  "expiredStillIn48HourGrace": [
+    "culture-helps-solidarity-collab-2"
+  ],
+  "pendingReview": [
+    "nea-kulhoni-2027",
+    "erosodo-karpat-medence-2027",
+    "csoori-2027",
+    "erasmus-youth-2027",
+    "erasmus-ka210-2027",
+    "creative-europe-cooperation-2027",
+    "mol-hatartalan-nyar-2027",
+    "communitas-2027",
+    "icr-cantemir-2027",
+    "consilii-judetene-2027",
+    "municipii-2027",
+    "see-norvegia-cultura"
+  ],
+  "verifiedSources": [
+    "https://agerpres.ro/documentare/2026/08/31/x--1589433",
+    "https://bgazrt.hu/2026-evi-hataron-tuli-elektronikus-sajto-tamogatasa-cimu-palyazati-kiiras/",
+    "https://centruldeproiecte.ro/stiri/fondul-pentru-nevoi-culturale-de-urgenta-apel-deschis-pentru-proiecte-culturale-in-timisoara/",
+    "https://craft-tour.eu/open-call/",
+    "https://culture.ec.europa.eu/culture-moves-europe/call-for-individual-mobility",
+    "https://culture.ec.europa.eu/culture-moves-europe/call-for-residency-hosts",
+    "https://culture.ec.europa.eu/whats-new/news/creative-europe-opens-2027-call-for-literary-translation-and-promotion",
+    "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/cerv/wp-call/2026/call-fiche_cerv-2026-citizens-rem_en.pdf",
+    "https://insha-osvita.org/en/?p=3478",
+    "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/a-kozossegi-programok-es-fesztivalok-kollegiuma-nyilt-palyazati-felhivasa-4/",
+    "https://nok.rmdsz.ro/palyazati-kiiras-mosolygo-karacsony-es-egyszulosok-karacsonya-2/",
+    "https://ortaklasa.iksv.org/en/call-for-cultural-collaboration/",
+    "https://www.afcn.ro/finantari.html",
+    "https://www.eeas.europa.eu/delegations/united-states-america/transatlantic-rising-stars-project-0_en",
+    "https://www.europeanheritagedays.com/Call-European-Heritage-Days-Stories-2027-TC",
+    "https://www.heritageresearch-hub.eu/app/uploads/2026/11/RCH-JTC-2027-Call-Text_final.pdf",
+    "https://www.heritageresearch-hub.eu/call/rch-2027-call/",
+    "https://www.raiffeisencomunitati.org/static/Ghidul-Aplicantului-Editia16-BKPVhnsD.pdf",
+    "https://www.visegradfund.org/visegrad-grants-apply",
+    "https://zmina.eu/en/calls/zmina-resilience-cocreation-2"
+  ],
+  "accessLimits": [
+    "ICR: a keresőben időtúllépés.",
+    "Funding & Tenders topic: a kereső átirányítása hibás; a Bizottság hivatalos közleménye és naptára elérhető.",
+    "Raiffeisen: a böngésző-kereső nem töltötte be a PDF-et; közvetlenül letöltve és szövegként ellenőrizve."
+  ],
+  "checks": [
+    "Node státusz-, 48 órás, DST-, meghívásos szakasz-, archiválási és nyelvi tesztek sikeresek.",
+    "JSON és egyedi azonosítók ellenőrizve.",
+    "Blog újragenerálás: nincs további eltérés."
+  ],
+  "deployment": "Közzététel utáni eredmény az ehhez tartozó beszélgetésben; ez a rekord a kiadás előtti ellenőrzés."
+}
