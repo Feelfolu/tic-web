@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-11",
+  "cron": "*/17 * * * *",
+  "cronMeaning": "Minutes 00,17,34,51 each hour",
+  "deploymentLogConfirmedCommit": "ebfa5c9fd1d8a672cb7bee3a70f0026cf61d71c6",
+  "deploymentLogTime": "2026-11-11T18:51:03+02:00",
+  "cronErrorLogEmpty": true,
+  "cacheFixCommit": "82c2ab340c043d2f3028ee6a78a3390649ecbb24",
+  "cacheFix": "Content-hash query versions on site.css and calendar scripts in index.html, calendar.html and events.html. Three HTML files saved via cPanel and read back to verify equality.",
+  "liveDataAndAssets": "Matched locally tested release byte-for-byte.",
+  "browserChecks": [
+    "Home highlights exclude individual-only calls.",
+    "Calendar has 48-hour notice and live status selector.",
+    "Expected-only filter displays two announced calls.",
+    "Hungarian language switching and search work."
+  ],
+  "credentials": "No API token stored. Normal scheduled updates use public GitHub access and do not require this token."
+}
