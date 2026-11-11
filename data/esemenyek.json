@@ -26,6 +26,11 @@
       "hu": "Műhely",
       "ro": "Atelier",
       "en": "Workshop"
+    },
+    "networking": {
+      "hu": "Partnerkereső",
+      "ro": "Întâlnire de parteneriat",
+      "en": "Partner matching"
     }
   },
   "events": [
@@ -99,6 +104,44 @@
       },
       "verificationSources": [
         "https://www.eacea.ec.europa.eu/news-events/events/online-info-session-circulation-european-literary-works-call-proposals-2027-2026-11-17_en"
+      ]
+    },
+    {
+      "id": "european-news-pitch-2026-12-02",
+      "type": "networking",
+      "start": "2026-12-02T14:00:00+01:00",
+      "end": "2026-12-02T15:30:00+01:00",
+      "dateOnly": false,
+      "online": true,
+      "langs": [
+        "hu",
+        "ro",
+        "en"
+      ],
+      "language": "en",
+      "userSelected": true,
+      "registrationRequired": true,
+      "pitchDeadline": "2026-11-22T18:00:00+01:00",
+      "url": "https://www.europacreativamedia.cat/noticies/les-oficines-europa-creativa-impulsen-una-jornada-de-networking-per-trobar-socis-per-a-la-convocatoria-news-journalism-partnerships-2027/",
+      "lastVerifiedAt": "2026-11-11T18:46:14+00:00",
+      "title": {
+        "hu": "European NEWS Pitch 2027 – nemzetközi partnerkereső és projektbemutató",
+        "ro": "European NEWS Pitch 2027 – parteneriate internaționale și prezentări de proiecte",
+        "en": "European NEWS Pitch 2027 – transnational partner matching and project pitches"
+      },
+      "organizer": {
+        "hu": "A Kreatív Európa irodák nemzetközi hálózata, romániai részvétellel",
+        "ro": "Rețeaua internațională a birourilor Europa Creativă, inclusiv România",
+        "en": "International network of Creative Europe Desks, including Romania"
+      },
+      "desc": {
+        "hu": "Angol nyelvű Zoom-esemény a NEWS – Journalism Partnerships 2027 felhívás iránt érdeklődő médiaszervezeteknek. Romániai idő: 15:00–16:30. Projektbemutatóra jelentkezés: november 22., 19:00 romániai idő szerint; megfigyelőknek külön Zoom-regisztráció. Nem általános kulturális pályázati tájékoztató. Részvételi díjat a szervező nem jelez. A hivatalos oldalon mindkét regisztrációs link elérhető.",
+        "ro": "Eveniment Zoom în engleză pentru organizațiile media interesate de NEWS – Journalism Partnerships 2027. Ora României: 15:00–16:30. Înscriere pentru prezentarea proiectului: 22 noiembrie, ora 19:00 în România; observatorii au înregistrare Zoom separată. Nu este o sesiune generală despre finanțări culturale. Organizatorul nu indică o taxă. Ambele formulare sunt pe pagina oficială.",
+        "en": "English-language Zoom event for media organisations interested in NEWS – Journalism Partnerships 2027. Romanian time: 15:00–16:30. Pitch applications close 22 November at 19:00 Romanian time; observers register separately on Zoom. This is a journalism-sector event. No participation fee is indicated. Both registration links are available on the official page."
+      },
+      "verificationSources": [
+        "https://www.europacreativamedia.cat/noticies/les-oficines-europa-creativa-impulsen-una-jornada-de-networking-per-trobar-socis-per-a-la-convocatoria-news-journalism-partnerships-2027/",
+        "https://www.kreativnievropa.cz/detail-akce/european-news-pitch-2027"
       ]
     }
   ]
