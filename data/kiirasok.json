@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-16",
   "note": "Szervezeti kulturális pályázatok. Nyilvános: publication=verified, vagy korábbi nyitott bejegyzés. Várható tételhez openingConfirmed és opensAt kötelező. A dátum nélküli ismétlődés belső review. Elrejtés: határidő +48 óra, archivált adat megtartásával. stages: meghívásos későbbi szakaszok, nem új jelentkezési határidők. Dátum-only értékeknél a helyi nap vége technikai határ, nem hivatalos óra-perc.",
   "tags": {
     "ro": {
@@ -1188,6 +1188,36 @@
         "en": "To watch: no launch date yet"
       },
       "publication": "review"
+    },
+    {
+      "id": "nka-nyomtatott-kulturalis-sajto-2027",
+      "status": "open",
+      "publication": "verified",
+      "deadlines": [
+        "2026-12-02T00:00:00+01:00"
+      ],
+      "langs": [
+        "hu"
+      ],
+      "tags": [
+        "hu",
+        "publishing",
+        "media"
+      ],
+      "url": "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/a-hagyomany-es-ismeretatadas-kollegiuma-ismeretterjesztes-es-kornyezetkultura-szakterulet-nyilt-palyazati-felhivasa-4/",
+      "title": {
+        "hu": "NKA – nyomtatott kulturális sajtótermékek 2027. évi támogatása"
+      },
+      "funder": {
+        "hu": "Nemzeti Kulturális Alap"
+      },
+      "who": {
+        "hu": "Romániában bejegyzett magyar nyelvű kulturális sajtótermék nyilvántartott kiadója is pályázhat (504101/319). Évi legalább négy lapszám, korábbi megjelent lapszám és hitelesített magyar lapbejegyzési fordítás szükséges. Legfeljebb 8 millió Ft, maximum 100% támogatás; kötelező önrész nincs, nevezési díj van. Megvalósítás: 2027. január–december. Beadás: december 1. éjfél magyarországi idő szerint (Romániában december 2. 01:00)."
+      },
+      "lastVerifiedAt": "2026-11-16T00:23:34Z",
+      "verificationSources": [
+        "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/a-hagyomany-es-ismeretatadas-kollegiuma-ismeretterjesztes-es-kornyezetkultura-szakterulet-nyilt-palyazati-felhivasa-4/"
+      ]
     }
   ]
 }
