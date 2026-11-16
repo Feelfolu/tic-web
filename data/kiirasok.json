@@ -1218,6 +1218,46 @@
       "verificationSources": [
         "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/a-hagyomany-es-ismeretatadas-kollegiuma-ismeretterjesztes-es-kornyezetkultura-szakterulet-nyilt-palyazati-felhivasa-4/"
       ]
+    },
+    {
+      "id": "kiruna-2029-test-an-idea",
+      "status": "open",
+      "deadlines": [
+        "2027-01-15"
+      ],
+      "dateOnly": true,
+      "langs": [
+        "ro",
+        "hu",
+        "en"
+      ],
+      "tags": [
+        "intl",
+        "performing",
+        "community"
+      ],
+      "url": "https://kiruna.se/kulturhuvudstaden/kulturhuvudstaden.html",
+      "title": {
+        "hu": "Kiruna 2029 Európa Kulturális Fővárosa – Test an Idea, korai ötletek",
+        "ro": "Kiruna 2029 Capitală Europeană a Culturii – Test an Idea, idei în fază incipientă",
+        "en": "Kiruna 2029 European Capital of Culture – Test an Idea, early ideas"
+      },
+      "funder": {
+        "hu": "Kiruna 2029 (Kiruna község, Svédország)",
+        "ro": "Kiruna 2029 (municipalitatea Kiruna, Suedia)",
+        "en": "Kiruna 2029 (Kiruna Municipality, Sweden)"
+      },
+      "who": {
+        "hu": "Korai fázisú ötletek, kísérleti kezdeményezések és együttműködések jelentkezhetnek; magánszemélyek is, nagyobb projektekhez szervezet kell. Külföldi szervezet is lehet főpályázó, helyi partner nem kötelező, de a projektnek érdemben kapcsolódnia kell Kirunához. Kiruna 2029 legfeljebb a költségvetés 50%-át fedezi, nem lehet egyedüli támogató. A nagy és közepes projektek fő felhívása október 31-én lezárult.",
+        "ro": "Pentru idei în fază incipientă, inițiative-pilot și colaborări; pot aplica și persoane fizice, iar proiectele mai mari necesită o organizație. Organizațiile din străinătate pot fi solicitant principal, fără partener local obligatoriu, dar proiectul trebuie să aibă o legătură reală cu Kiruna. Kiruna 2029 acoperă cel mult 50% din buget și nu poate fi singurul finanțator. Apelul principal pentru proiecte mari și medii s-a închis la 31 octombrie.",
+        "en": "For early-stage ideas, pilot initiatives and collaborations; individuals may submit, while larger projects need an organisation. Organisations based abroad may be lead applicants and no local partner is required, but the project must have a clear connection to Kiruna. Kiruna 2029 covers at most 50% of the budget and cannot be the sole funder. The main call for large and medium projects closed on 31 October."
+      },
+      "lastVerifiedAt": "2026-11-16T06:46:12+00:00",
+      "verificationSources": [
+        "https://kiruna.se/kulturhuvudstaden/kulturhuvudstaden.html"
+      ],
+      "timeZone": "Europe/Stockholm",
+      "publication": "verified"
     }
   ]
 }
