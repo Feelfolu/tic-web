@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-17",
   "note": "Szakmai események; az esemény befejezése után 48 órával nyilvános elrejtés. registrationDeadline és registrationStatus szabályozza a jelentkezés állapotát. dateOnly esetén a helyi nap végét használjuk technikai határként.",
   "types": {
     "webinar": {
@@ -143,6 +143,42 @@
         "https://www.europacreativamedia.cat/noticies/les-oficines-europa-creativa-impulsen-una-jornada-de-networking-per-trobar-socis-per-a-la-convocatoria-news-journalism-partnerships-2027/",
         "https://www.kreativnievropa.cz/detail-akce/european-news-pitch-2027"
       ]
+    },
+    {
+      "id": "amplify-raport-anual-2026-12-08",
+      "type": "webinar",
+      "start": "2026-12-08T10:00:00+02:00",
+      "end": "2026-12-08T12:00:00+02:00",
+      "dateOnly": false,
+      "online": true,
+      "langs": [
+        "hu",
+        "ro",
+        "en"
+      ],
+      "language": "ro",
+      "userSelected": true,
+      "registrationRequired": true,
+      "url": "https://luma.com/webinar-raport-anual-2026",
+      "title": {
+        "hu": "AmpliFY – az éves civil szervezeti beszámoló mint stratégiai eszköz",
+        "ro": "AmpliFY – raportul anual al ONG-ului ca instrument strategic",
+        "en": "AmpliFY – the NGO annual report as a strategic tool"
+      },
+      "organizer": {
+        "hu": "AmpliFY ONG – BCR Social Finance és How to Web",
+        "ro": "AmpliFY ONG – BCR Social Finance și How to Web",
+        "en": "AmpliFY ONG – BCR Social Finance and How to Web"
+      },
+      "desc": {
+        "hu": "Román nyelvű online webinárium Cristina Rigman közreműködésével, december 8-án 10:00–12:00 között, romániai idő szerint. Az éves beszámoló öt szerepe, a célhoz illő tartalom és megjelenés, romániai példák és a hatáskommunikáció etikai kérdései. Civil szervezetek vezetőinek, projekt-, kommunikációs és forrásteremtési munkatársainak. Kizárólag az AmpliFY-közösség tagjainak; a regisztráció szervezői jóváhagyáshoz kötött. A közösségi meghívó szerint ingyenes ajándék webinárium. Külön jelentkezési határidőt nem közölnek.",
+        "ro": "Webinar online în română cu Cristina Rigman, pe 8 decembrie, 10:00–12:00, ora României. Cele cinci roluri ale raportului anual, adaptarea conținutului și designului la scop, exemple din România și etica prezentării impactului. Pentru conducerea ONG-urilor și echipele de proiect, comunicare și fundraising. Exclusiv pentru membrii comunității AmpliFY; înscrierea necesită aprobarea organizatorului. Invitația comunității îl prezintă ca webinar-cadou gratuit. Nu este indicat un termen separat de înscriere.",
+        "en": "Romanian-language online webinar with Cristina Rigman on 8 December, 10:00–12:00 Romanian time. Five purposes of annual reports, purpose-led content and design, Romanian examples and ethical impact communication. For NGO leaders and project, communications and fundraising staff. Exclusively for AmpliFY community members; registration requires host approval. The community invitation presents it as a free gift webinar. No separate registration deadline is specified."
+      },
+      "verificationSources": [
+        "https://luma.com/webinar-raport-anual-2026"
+      ],
+      "lastVerifiedAt": "2026-11-17T19:48:35.392Z"
     }
   ]
 }
