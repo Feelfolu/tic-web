@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-20",
+  "complete": false,
+  "newCalls": 0,
+  "modifiedCalls": 0,
+  "newEvents": 0,
+  "modifiedEvents": 0,
+  "liveVersion": {
+    "commit": "96c4163630599c876151f4fad64a4d3219207d6d",
+    "deployed": "2026-11-17T19:51:02Z"
+  },
+  "observations": [
+    "GitHub maintenance instructions and November 11 report read.",
+    "Live version endpoint returned HTTP 200 via direct HTTP; search-service open failed.",
+    "Discovery search covered AFCN and Creative Europe; no candidate fully validated or published."
+  ],
+  "remaining": [
+    "Reverify all existing records and additional official sources.",
+    "Validate new candidates and eligibility.",
+    "Browser verification, current main checks and deployment verification."
+  ],
+  "publicDataChanged": false
+}
