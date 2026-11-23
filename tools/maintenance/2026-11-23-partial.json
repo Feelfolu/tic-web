@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-23",
+  "complete": false,
+  "newCalls": 0,
+  "modifiedCalls": 0,
+  "newEvents": 0,
+  "modifiedEvents": 0,
+  "publicDataChanged": false,
+  "liveVersion": {
+    "commit": "bc49cd6a034420fd16e17ed04e9986dee8a4432c",
+    "deployed": "2026-11-20T00:51:03Z"
+  },
+  "checks": [
+    "Current origin/main isolated without overwriting pre-existing local edits.",
+    "node tools/check_calendar.cjs passed.",
+    "Live calendar HTML contains 48-hour notice in all three languages."
+  ],
+  "sources": [
+    "https://www.afcn-proiecte.ro/apel-finantare.html",
+    "https://culture.ec.europa.eu/lv/culture-moves-europe/call-for-residency-hosts",
+    "https://nka.hu/esemenyek/lista/",
+    "https://www.creativeeuropeireland.eu/news-events/eacea-funding-webinars-on-2027-media-calls"
+  ],
+  "findings": [
+    "Residency hosts deadline remains 18 January 2027 23:59 CET; second phase is invitation-only.",
+    "MEDIA webinars discovered for 27 November, 15 December and 17 December; detailed audience, participation language and fee validation still pending.",
+    "NKA individual literary creation grants excluded from candidates."
+  ],
+  "remaining": [
+    "Full record-by-record source revalidation and broader funding search.",
+    "Validate MEDIA webinar candidates before publication.",
+    "Live browser interaction and mobile checks."
+  ],
+  "accessErrors": [
+    "Search service could not open live version JSON; direct curl succeeded."
+  ],
+  "deployment": "No public content changes; report-only commit."
+}
