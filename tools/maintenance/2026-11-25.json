@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-25",
+  "complete": false,
+  "newCalls": 0,
+  "modifiedCalls": 1,
+  "newEvents": 3,
+  "modifiedEvents": 0,
+  "statusChanges": {
+    "craft-tour-open-call": "postponed; replacement date unannounced; previous deadline archived"
+  },
+  "sources": [
+    "https://craft-tour.eu/open-call/",
+    "https://zmina.eu/en/calls/zmina-resilience-cocreation-2",
+    "https://www.visegradfund.org/grants",
+    "https://www.heritageresearch-hub.eu/call/rch-2027-call/",
+    "https://ortaklasa.iksv.org/en/call-for-cultural-collaboration/",
+    "https://www.europeanheritagedays.com/Call-European-Heritage-Days-Stories-2027-TC",
+    "https://culture.ec.europa.eu/culture-moves-europe/call-for-residency-hosts",
+    "https://centruldeproiecte.ro/stiri/fondul-pentru-nevoi-culturale-de-urgenta-apel-deschis-pentru-proiecte-culturale-in-timisoara/",
+    "https://nok.rmdsz.ro/palyazati-kiiras-mosolygo-karacsony-es-egyszulosok-karacsonya-2/",
+    "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en"
+  ],
+  "checks": [
+    "node tools/check_calendar.cjs passed",
+    "python tools/build_blog.py . passed after installing missing markdown dependency",
+    "git diff --check passed",
+    "Live version 6067e3e3142effcf3e1eaf8302f7f55f3f89e15c deployed 2026-11-25T00:17:02Z",
+    "Native Chromium screenshot confirms updated MEDIA event cards render"
+  ],
+  "remaining": [
+    "Full revalidation of every archived/review record not completed",
+    "Mobile, search and language interaction regression checks not completed"
+  ],
+  "deployment": "Public changes deployed and live event rendering verified"
+}
