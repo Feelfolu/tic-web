@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-25",
   "note": "Szervezeti kulturális pályázatok. Nyilvános: publication=verified, vagy korábbi nyitott bejegyzés. Várható tételhez openingConfirmed és opensAt kötelező. A dátum nélküli ismétlődés belső review. Elrejtés: határidő +48 óra, archivált adat megtartásával. stages: meghívásos későbbi szakaszok, nem új jelentkezési határidők. Dátum-only értékeknél a helyi nap vége technikai határ, nem hivatalos óra-perc.",
   "tags": {
     "ro": {
@@ -298,10 +298,7 @@
     },
     {
       "id": "craft-tour-open-call",
-      "status": "open",
-      "deadlines": [
-        "2026-11-16T12:00:00+01:00"
-      ],
+      "status": "postponed",
       "langs": [
         "ro",
         "hu",
@@ -328,11 +325,16 @@
         "ro": "Meșteșugari profesioniști și microîntreprinderi meșteșugărești de până la cinci angajați, înregistrate în UE, în domenii precise (de ex. țesut, port popular, lemn, ceramică, bijuterii, instrumente muzicale). 5.000 euro sumă forfetară, fără cofinanțare, plus nouă luni de mentorat; implementare din ianuarie 2027.",
         "en": "Professional craftspeople and craft micro-enterprises with up to five employees registered in the EU, in listed sectors (e.g. weaving, folk costume, woodwork, ceramics, jewellery, instrument making). EUR 5,000 lump sum with no co-financing, plus nine months of mentoring; implementation from January 2027."
       },
-      "lastVerifiedAt": "2026-11-11T16:37:03+00:00",
+      "lastVerifiedAt": "2026-11-25T00:14:00Z",
       "verificationSources": [
         "https://craft-tour.eu/open-call/"
       ],
-      "publication": "verified"
+      "publication": "verified",
+      "previousDeadlines": [
+        "2026-11-16T12:00:00+01:00"
+      ],
+      "deadlines": [],
+      "verificationNote": "Official call page: deadline postponed; replacement date not announced. Previous deadline retained for audit only."
     },
     {
       "id": "ortaklasa-eu-turkiye-2026",
