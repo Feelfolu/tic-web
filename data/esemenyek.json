@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-25",
   "note": "Szakmai események; az esemény befejezése után 48 órával nyilvános elrejtés. registrationDeadline és registrationStatus szabályozza a jelentkezés állapotát. dateOnly esetén a helyi nap végét használjuk technikai határként.",
   "types": {
     "webinar": {
@@ -179,6 +179,114 @@
         "https://luma.com/webinar-raport-anual-2026"
       ],
       "lastVerifiedAt": "2026-11-17T19:48:35.392Z"
+    },
+    {
+      "id": "eacea-media-2027-tools",
+      "type": "infoday",
+      "start": "2026-11-27T10:00:00+01:00",
+      "end": "2026-11-27T12:00:00+01:00",
+      "dateOnly": false,
+      "online": true,
+      "langs": [
+        "hu",
+        "ro",
+        "en"
+      ],
+      "language": "en",
+      "registrationRequired": false,
+      "url": "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+      "title": {
+        "hu": "MEDIA 2027 – Innovatív eszközök és üzleti modellek",
+        "ro": "MEDIA 2027 – Instrumente inovatoare și modele de afaceri",
+        "en": "MEDIA 2027 – Innovative tools and business models"
+      },
+      "organizer": {
+        "hu": "EACEA",
+        "ro": "EACEA",
+        "en": "EACEA"
+      },
+      "desc": {
+        "hu": "Angol nyelvű EACEA online pályázati tájékoztató audiovizuális szervezetek és szakemberek számára, romániai résztvevőknek is elérhető. Romániai idő: 11:00–13:00. Előzetes regisztráció nem szükséges; csatlakozás a hivatalos eseményoldalról. Külön részvételi díjat nem közölnek.",
+        "ro": "Sesiune online EACEA în engleză pentru organizații și profesioniști din audiovizual, accesibilă și participanților din România. Ora României: 11:00–13:00. Nu este necesară înscrierea prealabilă; acces prin pagina oficială. Nu este indicată o taxă de participare.",
+        "en": "English-language EACEA online funding information session for audiovisual organisations and professionals, accessible to participants from Romania. Romanian time: 11:00–13:00. No advance registration required; join via the official event page. No participation fee is specified."
+      },
+      "lastVerifiedAt": "2026-11-25T00:15:00Z",
+      "verificationSources": [
+        "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+        "https://www.creativeeuropeireland.eu/news-events/eacea-funding-webinars-on-2027-media-calls"
+      ]
+    },
+    {
+      "id": "eacea-media-2027-festivals",
+      "type": "infoday",
+      "start": "2026-12-15T10:00:00+01:00",
+      "end": "2026-12-15T12:00:00+01:00",
+      "dateOnly": false,
+      "online": true,
+      "langs": [
+        "hu",
+        "ro",
+        "en"
+      ],
+      "language": "en",
+      "registrationRequired": false,
+      "url": "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+      "title": {
+        "hu": "MEDIA 2027 – Európai filmfesztiválok",
+        "ro": "MEDIA 2027 – Festivaluri europene de film",
+        "en": "MEDIA 2027 – European festivals"
+      },
+      "organizer": {
+        "hu": "EACEA",
+        "ro": "EACEA",
+        "en": "EACEA"
+      },
+      "desc": {
+        "hu": "Angol nyelvű EACEA online pályázati tájékoztató audiovizuális szervezetek és szakemberek számára, romániai résztvevőknek is elérhető. Romániai idő: 11:00–13:00. Előzetes regisztráció nem szükséges; csatlakozás a hivatalos eseményoldalról. Külön részvételi díjat nem közölnek.",
+        "ro": "Sesiune online EACEA în engleză pentru organizații și profesioniști din audiovizual, accesibilă și participanților din România. Ora României: 11:00–13:00. Nu este necesară înscrierea prealabilă; acces prin pagina oficială. Nu este indicată o taxă de participare.",
+        "en": "English-language EACEA online funding information session for audiovisual organisations and professionals, accessible to participants from Romania. Romanian time: 11:00–13:00. No advance registration required; join via the official event page. No participation fee is specified."
+      },
+      "lastVerifiedAt": "2026-11-25T00:15:00Z",
+      "verificationSources": [
+        "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+        "https://www.creativeeuropeireland.eu/news-events/eacea-funding-webinars-on-2027-media-calls"
+      ]
+    },
+    {
+      "id": "eacea-media-2027-skills",
+      "type": "infoday",
+      "start": "2026-12-17T10:00:00+01:00",
+      "end": "2026-12-17T12:00:00+01:00",
+      "dateOnly": false,
+      "online": true,
+      "langs": [
+        "hu",
+        "ro",
+        "en"
+      ],
+      "language": "en",
+      "registrationRequired": false,
+      "url": "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+      "title": {
+        "hu": "MEDIA 2027 – Készség- és tehetségfejlesztés",
+        "ro": "MEDIA 2027 – Dezvoltarea competențelor și talentelor",
+        "en": "MEDIA 2027 – Skills and talents development"
+      },
+      "organizer": {
+        "hu": "EACEA",
+        "ro": "EACEA",
+        "en": "EACEA"
+      },
+      "desc": {
+        "hu": "Angol nyelvű EACEA online pályázati tájékoztató audiovizuális szervezetek és szakemberek számára, romániai résztvevőknek is elérhető. Romániai idő: 11:00–13:00. Előzetes regisztráció nem szükséges; csatlakozás a hivatalos eseményoldalról. Külön részvételi díjat nem közölnek.",
+        "ro": "Sesiune online EACEA în engleză pentru organizații și profesioniști din audiovizual, accesibilă și participanților din România. Ora României: 11:00–13:00. Nu este necesară înscrierea prealabilă; acces prin pagina oficială. Nu este indicată o taxă de participare.",
+        "en": "English-language EACEA online funding information session for audiovisual organisations and professionals, accessible to participants from Romania. Romanian time: 11:00–13:00. No advance registration required; join via the official event page. No participation fee is specified."
+      },
+      "lastVerifiedAt": "2026-11-25T00:15:00Z",
+      "verificationSources": [
+        "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+        "https://www.creativeeuropeireland.eu/news-events/eacea-funding-webinars-on-2027-media-calls"
+      ]
     }
   ]
 }
