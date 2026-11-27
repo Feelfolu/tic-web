@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-27",
+  "complete": false,
+  "newCalls": 0,
+  "modifiedCalls": 0,
+  "newEvents": 0,
+  "modifiedEvents": 0,
+  "publicDataChanged": false,
+  "sources": [
+    "https://craft-tour.eu/open-call/",
+    "https://zmina.eu/en/calls/zmina-resilience-cocreation-2",
+    "https://www.afcn-proiecte.ro/apel-finantare.html",
+    "https://culture.ec.europa.eu/whats-new/news/creative-europe-opens-2027-call-for-literary-translation-and-promotion",
+    "https://nka.hu/kiemelt-kategoriak/palyaztatas/kollegiumok-felhivasai/anyanyelvi-kultura-kollegiuma/",
+    "https://www.eacea.ec.europa.eu/news-events/events/online-info-sessions-creative-europe-media-and-cross-sectoral-2027-2026-10-12_en",
+    "https://www.heritageresearch-hub.eu/call/rch-2027-call/",
+    "https://ortaklasa.iksv.org/en/call-for-cultural-collaboration/"
+  ],
+  "findings": [
+    "No fully validated new eligible opportunity published.",
+    "CRAFT-TOUR remains postponed.",
+    "ZMINA deadline remains 4 December 2026 23:59 Kyiv time.",
+    "Literary translation deadline remains 27 January 2027 17:00 CET.",
+    "RCH pre-proposal remains 11 January 2027 14:00 CET."
+  ],
+  "checks": [
+    "node tools/check_calendar.cjs passed",
+    "git diff --check passed",
+    "Live version 4fc00f2c9bb9c6c6f0c7d1535bfe4403b10bc0a0 deployed 2026-11-25T00:34:02Z"
+  ],
+  "limitations": [
+    "Full record-by-record verification incomplete.",
+    "Browser and mobile regression not completed.",
+    "Blog build blocked by missing Python markdown dependency; no blog change required."
+  ],
+  "deployment": "No public data changes. Previous deployment verified by version endpoint."
+}
